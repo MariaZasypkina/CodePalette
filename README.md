@@ -1,2 +1,2 @@
-# ArtPalette
+# CodePalette
 My newest Portfolio
