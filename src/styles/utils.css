@@ -1,0 +1,38 @@
+/* @tailwind base */
+/* postcss */
+
+.btn-primary {
+  @apply bg-lavender-dark text-white px-6 py-3 rounded-full shadow hover:scale-105 transition;
+}
+
+.btn-outline {
+  @apply border-2 border-lavender-dark text-lavender-dark px-6 py-3 rounded-full hover:bg-lavender-dark hover:text-white transition;
+}
+
+.section-padding {
+  @apply py-16 px-4;
+}
+
+.heading-xl {
+  @apply text-5xl md:text-6xl font-bold tracking-tight;
+}
+
+.heading-md {
+  @apply text-3xl font-semibold mb-4;
+}
+
+.text-center-max {
+  @apply text-xl md:text-2xl mb-8 max-w-2xl text-center text-gray-800;
+} 
+
+.flex-center-col {
+  @apply flex flex-col items-center justify-center;
+}
+
+.container-centered {
+  @apply max-w-6xl mx-auto;
+}
+
+.hero-gradient {
+  @apply bg-gradient-to-br from-lavender-light via-white to-sage-light;
+}
