@@ -1,7 +1,18 @@
+import React from "react"
+import HeroSection from "./components/HeroSection"
+import AboutSection from "./components/AboutSection"
+import ProjectsSection from "./components/ProjectsSection"
+import ContactSection from "./components/ContactSection"
+import Navbar from "./components/Navbar"
+
 export default function App() {
   return (
-    <div>
-      <h1 className="text-red-500 text-3xl">Tailwind работает?</h1>
-    </div>
+    <main className="font-sans bg-white text-gray-900">
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ContactSection />
+    </main>
   );
 }
