@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <section className="hero-gradient w-full h-screen flex items-center justify-center px-4">
       <div className="text-center max-w-2xl">
-        <h1 className="heading-xl text-lavender-dark">CodePalette Studio</h1>
+        <h1 className="heading-xl text-lavender-dark">Creative Code Palette Studio</h1>
         <p className="text-center-max">
           Blending Artistry with Code — we design and build elegant digital experiences.
         </p>

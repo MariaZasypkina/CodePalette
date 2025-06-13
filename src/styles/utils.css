@@ -30,9 +30,45 @@
 }
 
 .container-centered {
-  @apply max-w-6xl mx-auto;
+  @apply max-w-5xl mx-auto px-4;
 }
 
 .hero-gradient {
   @apply bg-gradient-to-br from-lavender-light via-white to-sage-light;
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+.text-block {
+  @apply text-lg leading-relaxed mb-10 text-left;
+}
+
+.list-default {
+  @apply list-disc list-outside pl-5 space-y-2 text-gray-700 text-left;
+}
+
+.header-wrapper {
+  @apply bg-white shadow-sm border-b border-sage;
+}
+
+.header-inner {
+  @apply max-w-6xl mx-auto px-6 py-4 flex justify-between items-center;
+}
+
+.logo-title {
+  @apply text-2xl md:text-3xl font-bold text-lavender-dark font-sans;
+}
+
+.logo-sub {
+  @apply text-sm text-sage mt-1 tracking-wide;
+}
+
+.nav-links {
+  @apply hidden md:flex space-x-6 text-gray-800 font-medium;
+}
+
+.nav-links a {
+  @apply hover:text-lavender-dark;
 }
