@@ -6,10 +6,10 @@ export default function ContactSection() {
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl font-semibold mb-4">Get In Touch</h2>
         <p className="text-lg text-gray-700 mb-6">
-          I'd love to connect and hear about your project. Reach out to me at:
+          We'd love to connect and hear about your project. Reach out to us at:
         </p>
-        <a href="mailto:maria@example.com" className="text-blue-600 text-lg hover:underline">
-          maria@example.com
+        <a href="mailto:creative.code.palette@gmail.com" className="text-blue-600 text-lg hover:underline">
+          creative.code.palette
         </a>
       </div>
     </section>
