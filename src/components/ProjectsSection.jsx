@@ -2,7 +2,7 @@ import React from "react";
 import playWinThumb from "../assets/projects/play-and-win.png"; // <-- твой скрин игры
 
 export default function ProjectsSection() {
-  // четыре проекта, из которых третий — игра
+ 
   const projects = [
     {
       id: 1,
@@ -10,7 +10,6 @@ export default function ProjectsSection() {
       description:
         "Short project description goes here. A sentence or two about what it does.",
       github: "#",
-      live: "#",
       details: "/projects/1",
     },
     {
@@ -19,7 +18,6 @@ export default function ProjectsSection() {
       description:
         "Short project description goes here. A sentence or two about what it does.",
       github: "#",
-      live: "#",
       details: "/projects/2",
     },
     {
@@ -29,7 +27,6 @@ export default function ProjectsSection() {
         "A playful arcade mini-game where visitors cross the road, avoid crocos, collect coins and win a random discount on web design & development services.",
       image: playWinThumb,
       github: "https://github.com/MariaZasypkina/cross-the-road-game.git",
-      live: "/play-and-win",
       details: "/play-and-win",
     },
     {
@@ -38,7 +35,6 @@ export default function ProjectsSection() {
       description:
         "Short project description goes here. A sentence or two about what it does.",
       github: "#",
-      live: "#",
       details: "/projects/4",
     },
   ];
@@ -54,7 +50,6 @@ export default function ProjectsSection() {
               key={project.id}
               className="p-6 border border-gray-200 rounded-2xl shadow-md bg-white flex flex-col"
             >
-              {/* Если есть скрин — показываем */}
               {project.image && (
                 <img
                   src={project.image}
@@ -75,14 +70,6 @@ export default function ProjectsSection() {
                     className="text-blue-600 hover:underline"
                   >
                     GitHub
-                  </a>
-                )}
-                {project.live && (
-                  <a
-                    href={project.live}
-                    className="text-blue-600 hover:underline"
-                  >
-                    Live Demo
                   </a>
                 )}
                 {project.details && (
