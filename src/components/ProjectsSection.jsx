@@ -1,24 +1,25 @@
 import React from "react";
-import playWinThumb from "../assets/projects/play-and-win.png"; // <-- твой скрин игры
+//import { Link } from react-router-dom;
+import playWinThumb from "../assets/projects/play-and-win.png";
 
 export default function ProjectsSection() {
  
   const projects = [
     {
       id: 1,
-      title: "Project Title 1",
+      title: "ARTHIVE: a creative community with weekly artistic challenges",
       description:
-        "Short project description goes here. A sentence or two about what it does.",
-      github: "#",
-      details: "/projects/1",
+        "A creative sanctuary where artists discover inspiration through weekly challenges and meaningful community connections",
+      github: "https://github.com/MariaZasypkina/ArtHive.git",
+      details: "/arthive",
     },
     {
       id: 2,
-      title: "Project Title 2",
+      title: "KindNet. The easiest way to support your local community",
       description:
-        "Short project description goes here. A sentence or two about what it does.",
-      github: "#",
-      details: "/projects/2",
+        "Project to help people find needed goods and services. Map, ZIP lookup and advanced search.",
+      github: "https://github.com/MariaZasypkina/KindNet.git",
+      details: "/kindnet",
     },
     {
       id: 3,
@@ -31,9 +32,9 @@ export default function ProjectsSection() {
     },
     {
       id: 4,
-      title: "Project Title 4",
+      title: "Youth Fencing Team Support Page",
       description:
-        "Short project description goes here. A sentence or two about what it does.",
+        "This project is created to help to raise funds for the youth Denver Fencing Team",
       github: "#",
       details: "/projects/4",
     },
