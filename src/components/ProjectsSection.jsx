@@ -36,14 +36,14 @@ export default function ProjectsSection() {
       description:
         "This project is created to help to raise funds for the youth Denver Fencing Team",
       github: "#",
-      details: "/projects/4",
+      details: "/fencing",
     },
   ];
 
   return (
     <section className="bg-gray-50 py-16 px-4">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-8">Projects</h2>
+        <h2 className="text-3xl font-semibold mb-8">FAVORITE PROJECTS OF OUR STUDIO</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
