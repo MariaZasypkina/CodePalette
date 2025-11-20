@@ -1,6 +1,8 @@
 import React from "react";
-//import { Link } from react-router-dom;
 import playWinThumb from "../assets/projects/play-and-win.png";
+import kindNetImg from "../assets/projects/kindnet.png";
+import artHiveImg from "../assets/projects/arthive.png";
+import { Link } from "react-router-dom";
 
 export default function ProjectsSection() {
  
@@ -12,6 +14,7 @@ export default function ProjectsSection() {
         "A creative sanctuary where artists discover inspiration through weekly challenges and meaningful community connections",
       github: "https://github.com/MariaZasypkina/ArtHive.git",
       details: "/arthive",
+      image: artHiveImg,
     },
     {
       id: 2,
@@ -20,6 +23,7 @@ export default function ProjectsSection() {
         "Project to help people find needed goods and services. Map, ZIP lookup and advanced search.",
       github: "https://github.com/MariaZasypkina/KindNet.git",
       details: "/kindnet",
+      image: kindNetImg,
     },
     {
       id: 3,
@@ -37,6 +41,7 @@ export default function ProjectsSection() {
         "This project is created to help to raise funds for the youth Denver Fencing Team",
       github: "#",
       details: "/fencing",
+      image: null,
     },
   ];
 
@@ -52,11 +57,13 @@ export default function ProjectsSection() {
               className="p-6 border border-gray-200 rounded-2xl shadow-md bg-white flex flex-col"
             >
               {project.image && (
+                <Link to={project.details}>
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="rounded-xl mb-4 shadow-md"
+                  className="rounded-xl mb-4 shadow-md hover:shadow-lg transition-shadow"
                 />
+                </Link>
               )}
 
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>

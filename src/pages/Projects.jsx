@@ -5,10 +5,13 @@ import Footer from "../components/Footer";
 
 export default function Projects() {
   return (
-    <main className="font-sans hero-gradient min-h-screen">
-      <Navbar />
-      <ProjectsSection></ProjectsSection>
+    <div>
+      <main className="font-sans hero-gradient min-h-screen">
+        <Navbar />
+
+        <ProjectsSection></ProjectsSection>
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 }
