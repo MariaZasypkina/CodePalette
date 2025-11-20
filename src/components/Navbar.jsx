@@ -15,7 +15,7 @@ export default function Navbar() {
           <li><Link to="/templates">Templates</Link></li>
           <li><Link to="/realArt">Real Art</Link></li>
           <li><Link to="/play-and-win">Play & Win</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/about">About Us</Link></li>
           <li><Link to="/member">Sign In</Link></li>
         </ul>
         </div>
