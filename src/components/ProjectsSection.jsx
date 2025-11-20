@@ -2,10 +2,10 @@ import React from "react";
 import playWinThumb from "../assets/projects/play-and-win.png";
 import kindNetImg from "../assets/projects/kindnet.png";
 import artHiveImg from "../assets/projects/arthive.png";
+import fencingImg from "../assets/projects/fencing.png";
 import { Link } from "react-router-dom";
 
 export default function ProjectsSection() {
- 
   const projects = [
     {
       id: 1,
@@ -39,16 +39,18 @@ export default function ProjectsSection() {
       title: "Youth Fencing Team Support Page",
       description:
         "This project is created to help to raise funds for the youth Denver Fencing Team",
-      github: "#",
+      github: "https://github.com/MariaZasypkina/FencingNonProfit.git",
       details: "/fencing",
-      image: null,
+      image: fencingImg,
     },
   ];
 
   return (
     <section className="bg-gray-50 py-16 px-4">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-8">FAVORITE PROJECTS OF OUR STUDIO</h2>
+        <h2 className="text-3xl font-semibold mb-8">
+          FAVORITE PROJECTS OF OUR STUDIO
+        </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
@@ -58,11 +60,11 @@ export default function ProjectsSection() {
             >
               {project.image && (
                 <Link to={project.details}>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="rounded-xl mb-4 shadow-md hover:shadow-lg transition-shadow"
-                />
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="rounded-xl mb-4 shadow-md hover:shadow-lg transition-shadow"
+                  />
                 </Link>
               )}
 
