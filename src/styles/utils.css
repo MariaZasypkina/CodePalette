@@ -23,7 +23,7 @@
 
 .text-center-max {
   @apply text-xl md:text-2xl mb-8 max-w-2xl text-center text-gray-800;
-} 
+}
 
 .flex-center-col {
   @apply flex flex-col items-center justify-center;
@@ -71,4 +71,73 @@
 
 .nav-links a {
   @apply hover:text-lavender-dark;
+}
+/* Container */
+.infinite-waves {
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+  border-radius: 999px;
+  border: 6px  transparent;
+  background: transparent;
+  backdrop-filter: blur(8px);
+}
+
+.infinite-waves::after {
+  content: "";
+  position: absolute;
+  inset: -60px;
+  border-radius: inherit;
+  border: 36px solid transparent;
+  backdrop-filter: blur(25px);
+  mask: radial-gradient(
+    farthest-side,
+    transparent calc(100% - 12px),
+    black
+  );
+  pointer-events: none;
+}
+
+/* Base wave style */
+.wave {
+  position: absolute;
+  inset: 0;
+  width: 300%;
+  background-repeat: repeat-x;
+  opacity: 0.8;
+}
+
+/* BACK — sage wave (thin, soft) */
+.wave-back {
+  background-image: url("data:image/svg+xml,%3Csvg width='400' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40 Q 100 0 200 40 T 400 40' stroke='%23b8dfb5' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  animation: waveMoveBack 42s linear infinite;
+  opacity: 0.5;
+  filter: blur(2px);
+}
+
+/* FRONT — lilac wave (brighter, glowing) */
+.wave-front {
+  background-image: url("data:image/svg+xml,%3Csvg width='400' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40 Q 100 10 200 40 T 400 40' stroke='%23d4c2ff' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  animation: waveMoveFront 48s linear infinite;
+  filter: drop-shadow(0 0 6px rgba(200, 170, 255, 0.6));
+  opacity: 0.7;
+}
+
+/* Animations */
+@keyframes waveMoveBack {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+@keyframes waveMoveFront {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
 }
