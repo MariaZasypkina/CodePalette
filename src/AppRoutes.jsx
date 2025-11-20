@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import App from "./App";
 import Templates from "./pages/Shop";
 import PlayAndWin from "./pages/PlayAndWin";
-import ArtHive from "./pages/artHive";
+import ArtHive from "./pages/ArtHive";
 import KindNet from "./pages/KindNet";
 import Fencing from "./pages/Fencing";
 import AboutUs from "./pages/AboutUs";
