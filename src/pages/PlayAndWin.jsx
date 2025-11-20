@@ -6,14 +6,15 @@ import Game from "../game/Game.jsx";
 
 export default function PlayAndWin() {
   return (
-    <main className="font-sans hero-gradient min-h-screen">
-      <Navbar />
+    <div>
+      <main className="font-sans hero-gradient min-h-screen">
+        <Navbar />
 
-      <div className="min-h-[80vh] flex items-center justify-center py-16 px-4">
-        <Game />
-      </div>
-
+        <div className="min-h-[80vh] flex items-center justify-center py-16 px-4">
+          <Game />
+        </div>
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 }
