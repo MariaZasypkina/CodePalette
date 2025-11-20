@@ -12,8 +12,8 @@ export default function Navbar() {
         <ul className="flex space-x-6 text-sage-dark font-medium">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/templates">Templates</Link></li>
-          <li><Link to="/realArt">Real Art</Link></li>
+          <li><Link to="/shop">Shop</Link></li>
+          <li><Link to="/art">Real Art</Link></li>
           <li><Link to="/play-and-win">Play & Win</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/member">Sign In</Link></li>
