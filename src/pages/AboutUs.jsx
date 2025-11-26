@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { aboutText, skills, values } from "../data/aboutData";
@@ -8,6 +9,16 @@ export default function AboutUs() {
     <div>
       <main className="font-sans hero-gradient min-h-screen text-sage-dark">
         <Navbar />
+
+        <div className="px-6 pt-4">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-lavender-dark hover:text-lavender"
+          >
+            <span className="text-xl leading-none">←</span>
+            <span>Home</span>
+          </Link>
+        </div>
 
         <section className="section-padding">
           <div className="container-centered space-y-10">
