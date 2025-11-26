@@ -50,7 +50,7 @@
 }
 
 .header-wrapper {
-  @apply bg-white shadow-sm border-b border-sage;
+  @apply bg-white shadow-sm border-b border-sage sticky top-0 inset-x-0 z-50;
 }
 
 .header-inner {
