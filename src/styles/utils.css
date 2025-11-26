@@ -6,7 +6,7 @@
 }
 
 .btn-outline {
-  @apply border-2 border-lavender-dark text-lavender-dark px-6 py-3 rounded-full hover:bg-lavender-dark hover:text-white transition;
+  @apply border-2 border-lavender-dark text-lavender-dark px-6 py-3 rounded-full hover:bg-lavender-dark hover:text-white transition inline-flex justify-center text-center w-full sm:w-40;
 }
 
 .section-padding {
