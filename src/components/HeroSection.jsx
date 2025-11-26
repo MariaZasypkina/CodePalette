@@ -23,12 +23,12 @@ export default function HeroSection() {
             Contact Us
           </a>
         </div>
+      </div>
 
-        <div className="mt-10 w-full max-w-5xl">
-          <div className="infinite-waves">
-            <div className="wave wave-back"></div>
-            <div className="wave wave-front"></div>
-          </div>
+      <div className="mt-10 w-full self-stretch">
+        <div className="infinite-waves">
+          <div className="wave wave-back"></div>
+          <div className="wave wave-front"></div>
         </div>
       </div>
     </section>
