@@ -64,7 +64,7 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden px-6 pb-4 border-t border-sage bg-white">
+        <div className="lg:hidden px-6 pb-4 border-t border-sage bg-white">
           <ul className="flex flex-col space-y-3 text-sage-dark font-medium">
             <li>
               <Link to="/" onClick={handleClose}>
