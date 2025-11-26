@@ -8,9 +8,9 @@ export default function Shop() {
     <main>
       <Navbar />
 
-    <div className="min-h-screen p-8 bg-white">
-      <h1 className="text-4xl font-bold text-sage-600">GALLERY OF OUR FAVORITE STYLES </h1>
-      <p className="mt-4 text-lg text-gray-700">Coming soon: Browse and purchase ready-to-use website templates!</p>
+    <div className="min-h-screen p-8 bg-white text-sage-dark">
+      <h1 className="text-4xl font-bold text-lavender-dark">GALLERY OF OUR FAVORITE STYLES </h1>
+      <p className="mt-4 text-lg">Coming soon: Browse and purchase ready-to-use website templates!</p>
     </div>
     
 <Footer />

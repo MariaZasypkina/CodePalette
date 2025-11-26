@@ -46,10 +46,10 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-4">
+    <section className="bg-gray-50 py-16 px-4 text-sage-dark">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-8">
-          FAVORITE PROJECTS OF OUR STUDIO
+        <h2 className="text-3xl font-semibold mb-8 text-lavender-dark">
+          Favorite Projects of Our Studio
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -68,16 +68,18 @@ export default function ProjectsSection() {
                 </Link>
               )}
 
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-lavender-dark">
+                {project.title}
+              </h3>
 
-              <p className="text-gray-600 mb-4">{project.description}</p>
+              <p className="mb-4">{project.description}</p>
 
               <div className="flex gap-4 mt-auto">
                 {/* only current links */}
                 {project.github && (
                   <a
                     href={project.github}
-                    className="text-blue-600 hover:underline"
+                    className="text-lavender-dark hover:text-lavender underline"
                   >
                     GitHub
                   </a>
@@ -85,7 +87,7 @@ export default function ProjectsSection() {
                 {project.details && (
                   <a
                     href={project.details}
-                    className="text-blue-600 hover:underline"
+                    className="text-lavender-dark hover:text-lavender underline"
                   >
                     Details
                   </a>
