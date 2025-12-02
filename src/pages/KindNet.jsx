@@ -2,8 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import landingImg from "../assets/projects/KindNet-lending.png";
+import designImg from "../assets/projects/KindNet-design.png";
+import homeImg from "../assets/projects/KindNet-home.png";
+import mapImg from "../assets/projects/KindNet-map.png";
+import post1Img from "../assets/projects/KindNet-post1.png";
+import post2Img from "../assets/projects/KindNet-post2.png";
+import signupImg from "../assets/projects/KindNet-signup.png";
+import videoDemo from "../assets/projects/KindNet-video.mov";
+import teamImg from "../assets/projects/KindNet-team.png";
 
 export default function KindNet() {
+  const showcaseItems = [
+    { title: "Landing", type: "image", src: landingImg },
+    { title: "Design", type: "image", src: designImg },
+    { title: "Home", type: "image", src: homeImg },
+    { title: "Map", type: "image", src: mapImg },
+    { title: "Post #1", type: "image", src: post1Img },
+    { title: "Post #2", type: "image", src: post2Img },
+    { title: "Sign Up", type: "image", src: signupImg },
+    { title: "Product Walkthrough", type: "video", src: videoDemo },
+  ];
+
   return (
     <main>
       <div className="min-h-screen p-8 bg-white text-sage-dark">
@@ -34,6 +54,40 @@ export default function KindNet() {
               practices across the entire stack.
             </p>
           </header>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-semibold text-lavender-dark">
+              Screens &amp; Demo
+            </h2>
+            <div className="grid gap-6 md:grid-cols-2">
+              {showcaseItems.map((item) => (
+                <div
+                  key={item.title}
+                  className="border border-gray-200 rounded-2xl overflow-hidden shadow-sm"
+                >
+                  <div className="bg-gray-50 px-4 py-3 border-b border-gray-200">
+                    <p className="font-semibold text-sage-dark">{item.title}</p>
+                  </div>
+                  {item.type === "image" ? (
+                    <img
+                      src={item.src}
+                      alt={`${item.title} screen`}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <video
+                      src={item.src}
+                      controls
+                      className="w-full h-full"
+                      poster={landingImg}
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
 
           <section className="grid gap-8 md:grid-cols-2">
             <div className="p-6 border border-gray-200 rounded-2xl shadow-sm">
@@ -176,16 +230,22 @@ export default function KindNet() {
               <li>Production-oriented mindset with environment configs and deployment-readiness</li>
             </ul>
           </section>
+        </div>
 
-          <section className="space-y-3">
-            <h2 className="text-2xl font-semibold text-lavender-dark">
-              Screens &amp; Demo
-            </h2>
-            <p className="text-sage-dark">
-              Gallery and video coming soon. Send the screenshots and walkthrough video to
-              embed them here.
-            </p>
-          </section>
+        <div className="max-w-5xl mx-auto mt-12">
+          <img
+            src={teamImg}
+            alt="KindNet team"
+            className="w-full rounded-2xl shadow-md"
+          />
+          <div className="mt-6 text-center">
+            <a
+              href="https://github.com/MariaZasypkina/KindNet.git"
+              className="text-lavender-dark hover:text-lavender underline"
+            >
+              View on GitHub
+            </a>
+          </div>
         </div>
       </div>
       <Footer />
