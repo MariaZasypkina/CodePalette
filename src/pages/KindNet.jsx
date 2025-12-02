@@ -72,7 +72,7 @@ export default function KindNet() {
                     <img
                       src={item.src}
                       alt={`${item.title} screen`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain bg-white"
                     />
                   ) : (
                     <video
