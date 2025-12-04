@@ -20,7 +20,8 @@ export default async function handler(req, res) {
 
   // Get environment variables
   const apiKey = process.env.RESEND_API_KEY;
-  const contactEmail = process.env.CONTACT_EMAIL || 'noreply@codepalette.studio';
+  // Default recipient (site owner) — correct address for this project
+  const contactEmail = process.env.CONTACT_EMAIL || 'creative.code.palette@gmail.com';
 
   if (!apiKey) {
     console.error('RESEND_API_KEY environment variable is not set');
@@ -30,10 +31,14 @@ export default async function handler(req, res) {
   try {
     const resend = new Resend(apiKey);
 
-    const result = await resend.emails.send({
-      from: 'noreply@codepalette.studio',
-      to: contactEmail,
-      replyTo: email,
+    // Build payload. Use FROM_EMAIL if provided, otherwise use a safe Resend onboarding address for testing.
+    const fromEnv = process.env.FROM_EMAIL;
+    const fromAddress = fromEnv || 'Code Palette <onboarding@resend.dev>';
+    const toRecipients = Array.isArray(contactEmail) ? contactEmail : [contactEmail];
+
+    const payload = {
+      from: fromAddress,
+      to: toRecipients,
       subject: subject || `New message from ${name}`,
       html: `
         <h2>New message from your website</h2>
@@ -42,7 +47,11 @@ export default async function handler(req, res) {
         <p><strong>Message:</strong></p>
         <p>${message.replace(/\n/g, '<br>')}</p>
       `,
-    });
+    };
+
+    if (email) payload.replyTo = email;
+
+    const result = await resend.emails.send(payload);
 
     if (result.error) {
       return res.status(400).json({ error: result.error.message });
@@ -51,7 +60,7 @@ export default async function handler(req, res) {
     return res.status(200).json({ 
       success: true, 
       message: 'Email sent successfully',
-      id: result.data?.id 
+      id: result.data?.id,
     });
   } catch (error) {
     console.error('Error sending email:', error);

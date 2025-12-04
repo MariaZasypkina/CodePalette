@@ -31,7 +31,7 @@ Open `.env.local` file (already created) and fill:
 
 ```env
 RESEND_API_KEY=re_YOUR_API_KEY_HERE
-CONTACT_EMAIL=your-email@gmail.com
+CONTACT_EMAIL=creative.code.palette@gmail.com
 ```
 
 Replace:
@@ -61,7 +61,7 @@ Replace:
 ### What You'll Receive
 
 Email arrives with:
-- **From**: noreply@codepalette.studio
+- **From**: Code Palette <onboarding@resend.dev> (or your verified `FROM_EMAIL`)
 - **Subject**: Custom subject from form
 - **Body**: User's name, their email, and message
 - **Reply-To**: User's email (you can reply directly)
@@ -70,7 +70,7 @@ Email arrives with:
 
 ## Verifying Email Domain (Optional)
 
-By default, Resend uses their subdomain `noreply@codepalette.studio`.
+By default, Resend will send from a Resend-owned address (for example `onboarding@resend.dev`) until you verify your own sending domain.
 
 To send from your own domain (e.g., `hello@yoursite.com`):
 
@@ -87,8 +87,8 @@ To send from your own domain (e.g., `hello@yoursite.com`):
 - Check `.env.local` has both `RESEND_API_KEY` and `CONTACT_EMAIL`
 - Restart dev server: `npm run dev`
 
-### Email arrives from "noreply@codepalette.studio"
-- This is expected! You can set up custom domain in Resend later
+### Email arrives from a Resend address
+- This is expected when your domain is not verified. To send from your own address, verify your domain in Resend (see "Verifying Email Domain" above).
 
 ### 100 emails/day limit exceeded
 - Upgrade Resend plan (cheap) or ask to reset quota

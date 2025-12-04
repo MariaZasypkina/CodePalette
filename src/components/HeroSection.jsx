@@ -19,7 +19,7 @@ export default function HeroSection() {
           >
             View Projects
           </a>
-          <a href="/about" className="btn-outline">
+          <a href="/contact" className="btn-outline">
             Contact Us
           </a>
         </div>

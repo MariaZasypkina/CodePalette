@@ -35,7 +35,7 @@ The contact form automatically sends emails to your inbox without opening a mail
    Example:
    ```
    RESEND_API_KEY=re_abc123xyz789
-   CONTACT_EMAIL=hello@codepalette.studio
+   CONTACT_EMAIL=creative.code.palette@gmail.com
    ```
 
 4. **Test Locally**:

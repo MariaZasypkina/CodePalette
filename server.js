@@ -37,7 +37,8 @@ app.post('/api/send-email', async (req, res) => {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const contactEmail = process.env.CONTACT_EMAIL || 'noreply@codepalette.studio';
+  // Default recipient (site owner) — correct address for this project
+  const contactEmail = process.env.CONTACT_EMAIL || 'creative.code.palette@gmail.com';
 
   if (!apiKey) {
     console.error('RESEND_API_KEY not set');
