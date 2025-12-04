@@ -11,18 +11,22 @@ import Projects from "./pages/Projects";
 import Shop from "./pages/Shop";
 import RealArt from "./pages/RealArt";
 import SignIn from "./pages/SignIn";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/play-and-win" element={<PlayAndWin />} />
       <Route path="/arthive" element={<ArtHive />} />
       <Route path="/kindnet" element={<KindNet />} />
       <Route path="/fencing" element={<Fencing />} />
-      <Route path="/about" element={<AboutUs />} />
-      <Route path="/projects" element={<Projects />} />
       <Route path="/art" element={<RealArt />} />
       <Route path="/member" element={<SignIn />} />
     </Routes>
