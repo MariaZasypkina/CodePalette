@@ -9,8 +9,5 @@
       "destination": "/index.html"
     }
   ],
-  "env": {
-    "RESEND_API_KEY": "RESEND_API_KEY",
-    "CONTACT_EMAIL": "CONTACT_EMAIL"
-  }
+  
 }
