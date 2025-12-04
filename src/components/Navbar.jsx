@@ -43,22 +43,16 @@ export default function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/services">Services</Link>
+          </li>
+          <li>
             <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/shop">Shop</Link>
-          </li>
-          <li>
-            <Link to="/art">Real Art</Link>
-          </li>
-          <li>
-            <Link to="/play-and-win">Play & Win</Link>
           </li>
           <li>
             <Link to="/about">About Us</Link>
           </li>
           <li>
-            <Link to="/member">Sign In</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
@@ -72,23 +66,13 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
+              <Link to="/services" onClick={handleClose}>
+                Services
+              </Link>
+            </li>
+            <li>
               <Link to="/projects" onClick={handleClose}>
                 Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="/shop" onClick={handleClose}>
-                Shop
-              </Link>
-            </li>
-            <li>
-              <Link to="/art" onClick={handleClose}>
-                Real Art
-              </Link>
-            </li>
-            <li>
-              <Link to="/play-and-win" onClick={handleClose}>
-                Play & Win
               </Link>
             </li>
             <li>
@@ -97,8 +81,8 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/member" onClick={handleClose}>
-                Sign In
+              <Link to="/contact" onClick={handleClose}>
+                Contact
               </Link>
             </li>
           </ul>
