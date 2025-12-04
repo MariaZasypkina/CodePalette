@@ -10,7 +10,7 @@
 Open `.env.local` and replace:
 ```env
 RESEND_API_KEY=YOUR_API_KEY_HERE
-CONTACT_EMAIL=your-email@gmail.com
+CONTACT_EMAIL=creative.code.palette@gmail.com
 ```
 
 ### Step 3: Test & Deploy (5 min)
