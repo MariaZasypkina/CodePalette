@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "./App";
-import Templates from "./pages/Shop";
 import PlayAndWin from "./pages/PlayAndWin";
 import ArtHive from "./pages/ArtHive";
 import KindNet from "./pages/KindNet";
@@ -13,6 +12,7 @@ import RealArt from "./pages/RealArt";
 import SignIn from "./pages/SignIn";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import QuizPage from "./pages/QuizPage";
 
 export default function AppRoutes() {
   return (
@@ -22,6 +22,7 @@ export default function AppRoutes() {
       <Route path="/projects" element={<Projects />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/quiz" element={<QuizPage />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/play-and-win" element={<PlayAndWin />} />
       <Route path="/arthive" element={<ArtHive />} />

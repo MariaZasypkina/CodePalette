@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 /* global process */
 import fs from 'fs';
 import dotenv from 'dotenv';
@@ -89,6 +88,5 @@ app.post('/api/send-email', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  // eslint-disable-next-line no-console
   console.log(`Local API server listening on http://localhost:${PORT}`);
 });

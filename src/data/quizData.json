@@ -1,0 +1,224 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "What do you need a website for?",
+      "subtitle": "Check all that apply",
+      "type": "checkbox",
+      "options": [
+        { "id": "attract_clients", "label": "Attract new clients", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 1, "store": 0, "custom": 1 } },
+        { "id": "sell_services", "label": "Sell services", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 2, "store": 0, "custom": 2 } },
+        { "id": "sell_products", "label": "Sell physical products", "weight": { "landing": 0, "portfolio": 0, "business": 1, "booking": 0, "store": 3, "custom": 2 } },
+        { "id": "booking", "label": "Online booking or scheduling", "weight": { "landing": 0, "portfolio": 0, "business": 1, "booking": 3, "store": 0, "custom": 2 } },
+        { "id": "brand", "label": "Build a personal brand", "weight": { "landing": 1, "portfolio": 3, "business": 0, "booking": 0, "store": 0, "custom": 1 } },
+        { "id": "portfolio", "label": "Showcase portfolio", "weight": { "landing": 0, "portfolio": 3, "business": 1, "booking": 0, "store": 0, "custom": 2 } },
+        { "id": "company", "label": "Present a company or organization", "weight": { "landing": 1, "portfolio": 0, "business": 3, "booking": 1, "store": 1, "custom": 2 } },
+        { "id": "classes", "label": "Host classes / school / club", "weight": { "landing": 0, "portfolio": 0, "business": 2, "booking": 3, "store": 0, "custom": 2 } },
+        { "id": "other", "label": "Other", "weight": { "landing": 0, "portfolio": 0, "business": 1, "booking": 0, "store": 1, "custom": 1 } }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "What is most important to you?",
+      "subtitle": "Check all that apply",
+      "type": "checkbox",
+      "options": [
+        { "id": "quick_launch", "label": "A quick launch", "weight": { "landing": 2, "portfolio": 2, "business": 1, "booking": 2, "store": 1, "custom": -1 } },
+        { "id": "design", "label": "A modern, visually appealing design", "weight": { "landing": 2, "portfolio": 3, "business": 2, "booking": 1, "store": 2, "custom": 3 } },
+        { "id": "budget", "label": "A small starter budget", "weight": { "landing": 3, "portfolio": 2, "business": 1, "booking": 1, "store": 0, "custom": -2 } },
+        { "id": "low_cost", "label": "Minimal monthly costs", "weight": { "landing": 3, "portfolio": 1, "business": 1, "booking": 0, "store": 0, "custom": 2 } },
+        { "id": "self_edit", "label": "Ability to edit the website myself", "weight": { "landing": 1, "portfolio": 2, "business": 2, "booking": 1, "store": 2, "custom": 0 } },
+        { "id": "performance", "label": "Fast performance and high quality", "weight": { "landing": 1, "portfolio": 1, "business": 2, "booking": 1, "store": 2, "custom": 3 } },
+        { "id": "automation", "label": "Automation (calendar, payments, integrations)", "weight": { "landing": 0, "portfolio": 0, "business": 2, "booking": 3, "store": 3, "custom": 3 } }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Are you comfortable paying a monthly platform fee?",
+      "subtitle": "Check all that apply",
+      "type": "checkbox",
+      "options": [
+        { "id": "up_to_10", "label": "Yes, up to $10/month", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 0, "store": 0, "custom": 0 } },
+        { "id": "20_30", "label": "Yes, $20–$30/month is fine", "weight": { "landing": 0, "portfolio": 2, "business": 2, "booking": 2, "store": 1, "custom": 0 } },
+        { "id": "minimal_costs", "label": "No, I want minimal ongoing costs", "weight": { "landing": 3, "portfolio": 1, "business": 1, "booking": 0, "store": -1, "custom": 1 } },
+        { "id": "no_subscription", "label": "I prefer a website without any subscription", "weight": { "landing": 3, "portfolio": 0, "business": 0, "booking": -2, "store": -2, "custom": 2 } },
+        { "id": "not_sure", "label": "I'm not sure", "weight": { "landing": 1, "portfolio": 1, "business": 1, "booking": 1, "store": 0, "custom": 0 } }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Who will maintain the website after launch?",
+      "subtitle": "Check all that apply",
+      "type": "checkbox",
+      "options": [
+        { "id": "self_maintain", "label": "I want to maintain it myself", "weight": { "landing": 1, "portfolio": 2, "business": 2, "booking": 1, "store": 1, "custom": 0 } },
+        { "id": "agency_support", "label": "I'd like the agency to handle support", "weight": { "landing": 0, "portfolio": 1, "business": 1, "booking": 1, "store": 1, "custom": 2 } },
+        { "id": "occasional", "label": "Occasional updates only", "weight": { "landing": 1, "portfolio": 1, "business": 1, "booking": 0, "store": 0, "custom": 1 } },
+        { "id": "rarely", "label": "Rarely or almost never", "weight": { "landing": 2, "portfolio": 1, "business": 0, "booking": 0, "store": 0, "custom": 0 } },
+        { "id": "not_sure_maintain", "label": "Not sure", "weight": { "landing": 1, "portfolio": 1, "business": 1, "booking": 1, "store": 1, "custom": 1 } }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "What features do you need?",
+      "subtitle": "Check all that apply",
+      "type": "checkbox",
+      "options": [
+        { "id": "contact_form", "label": "Contact form", "weight": { "landing": 2, "portfolio": 1, "business": 2, "booking": 1, "store": 1, "custom": 1 } },
+        { "id": "booking_calendar", "label": "Online booking / calendar", "weight": { "landing": 0, "portfolio": 0, "business": 1, "booking": 3, "store": 0, "custom": 2 } },
+        { "id": "blog", "label": "Blog or articles", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 0, "store": 0, "custom": 1 } },
+        { "id": "store", "label": "Online store / products", "weight": { "landing": 0, "portfolio": 0, "business": 0, "booking": 0, "store": 3, "custom": 2 } },
+        { "id": "gallery", "label": "Portfolio or gallery", "weight": { "landing": 1, "portfolio": 3, "business": 1, "booking": 0, "store": 1, "custom": 1 } },
+        { "id": "events", "label": "Events calendar", "weight": { "landing": 0, "portfolio": 0, "business": 1, "booking": 2, "store": 0, "custom": 1 } },
+        { "id": "payments", "label": "Online payments", "weight": { "landing": 0, "portfolio": 0, "business": 1, "booking": 2, "store": 3, "custom": 2 } },
+        { "id": "simple_info", "label": "Nothing complex, just information", "weight": { "landing": 3, "portfolio": 1, "business": 1, "booking": 0, "store": 0, "custom": 0 } }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "What is your one-time budget for development?",
+      "subtitle": "Choose one",
+      "type": "radio",
+      "options": [
+        { "id": "under_500", "label": "Under $500", "weight": { "landing": 3, "portfolio": 2, "business": 1, "booking": 0, "store": -2, "custom": -3 } },
+        { "id": "500_1500", "label": "$500–$1500", "weight": { "landing": 2, "portfolio": 2, "business": 2, "booking": 2, "store": 1, "custom": -1 } },
+        { "id": "1500_5000", "label": "$1500–$5000", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 2, "store": 2, "custom": 1 } },
+        { "id": "over_5000", "label": "Over $5000", "weight": { "landing": 0, "portfolio": 1, "business": 1, "booking": 1, "store": 2, "custom": 3 } }
+      ]
+    }
+  ],
+  "results": {
+    "landing": {
+      "title": "Static Landing Page",
+      "subtitle": "No Monthly Fees",
+      "description": "Perfect if you want a simple, fast, one-time project with no ongoing costs.",
+      "features": [
+        "1 clean landing page",
+        "Modern design",
+        "Fast performance",
+        "No platform subscription",
+        "Optional maintenance plan available"
+      ],
+      "bestFor": [
+        "Very small businesses",
+        "First website",
+        "Minimal budget"
+      ],
+      "monthlyCost": "None",
+      "oneTimeCost": "Under $500",
+      "timeline": "3–5 days",
+      "editable": "Via custom code or custom dashboard"
+    },
+    "portfolio": {
+      "title": "Personal Brand / Portfolio Website",
+      "subtitle": "For Creators & Freelancers",
+      "description": "Perfect for creators, freelancers, coaches, artists, and trainers who want to showcase their work.",
+      "features": [
+        "3–5 pages",
+        "Portfolio, services, about, contact",
+        "Editable via intuitive platform",
+        "Quick launch",
+        "Modern responsive design"
+      ],
+      "bestFor": [
+        "Freelancers",
+        "Artists & designers",
+        "Coaches & trainers",
+        "Small creators"
+      ],
+      "monthlyCost": "$16–$27/month",
+      "oneTimeCost": "$1000–$3000",
+      "timeline": "1–2 weeks",
+      "editable": "Yes, via Wix/Squarespace or similar"
+    },
+    "business": {
+      "title": "Business Website",
+      "subtitle": "4–7 Pages for Growing Businesses",
+      "description": "A solid website for a growing business or organization with room for content and SEO.",
+      "features": [
+        "Home + services + about + contact + optional blog",
+        "SEO-ready structure",
+        "Flexible content management",
+        "Editable by client or agency",
+        "Professional design"
+      ],
+      "bestFor": [
+        "Small to medium businesses",
+        "Local services",
+        "Consulting & agencies",
+        "Organizations"
+      ],
+      "monthlyCost": "$5–$30/month (depending on platform)",
+      "oneTimeCost": "$1500–$5000",
+      "timeline": "2–4 weeks",
+      "editable": "Yes, via WordPress or Wix"
+    },
+    "booking": {
+      "title": "Booking Website",
+      "subtitle": "With Online Scheduling",
+      "description": "Ideal if you need clients to book appointments directly online with automated confirmations.",
+      "features": [
+        "Interactive calendar",
+        "Service selection & pricing",
+        "Email confirmations",
+        "Payment integration",
+        "Client management dashboard"
+      ],
+      "bestFor": [
+        "Salons & spas",
+        "Coaches & trainers",
+        "Consultants",
+        "Medical practices",
+        "Beauty professionals"
+      ],
+      "monthlyCost": "$5–$34/month (depending on platform)",
+      "oneTimeCost": "$1500–$3000",
+      "timeline": "1–3 weeks",
+      "editable": "Partially editable via booking platform"
+    },
+    "store": {
+      "title": "Small Online Store",
+      "subtitle": "eCommerce for 1–50 Products",
+      "description": "For selling physical or digital products with secure payments and inventory management.",
+      "features": [
+        "Product catalog",
+        "Shopping cart & checkout",
+        "Payment integration (Stripe, PayPal)",
+        "Inventory tracking",
+        "Clean responsive design"
+      ],
+      "bestFor": [
+        "Small product businesses",
+        "Artisans & makers",
+        "Digital product creators",
+        "Side hustles"
+      ],
+      "monthlyCost": "$5–$39/month (depending on platform)",
+      "oneTimeCost": "$2000–$5000",
+      "timeline": "2–4 weeks",
+      "editable": "Yes, via Shopify or WooCommerce"
+    },
+    "custom": {
+      "title": "Custom React/Next.js Premium Website",
+      "subtitle": "Top Performance & Scalability",
+      "description": "For clients who want top performance, custom functionality, and no platform constraints.",
+      "features": [
+        "Fully custom design & functionality",
+        "Fastest loading speed",
+        "Scalable architecture",
+        "No subscription required",
+        "Complete control & flexibility"
+      ],
+      "bestFor": [
+        "Serious brands & startups",
+        "Complex applications",
+        "High-traffic sites",
+        "Companies with specific needs"
+      ],
+      "monthlyCost": "Optional support only ($200–$500/month)",
+      "oneTimeCost": "From $4000+",
+      "timeline": "4–8 weeks",
+      "editable": "Via custom dashboard or agency support"
+    }
+  }
+}
