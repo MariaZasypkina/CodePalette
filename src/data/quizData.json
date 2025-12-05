@@ -39,7 +39,7 @@
       "type": "checkbox",
       "options": [
         { "id": "up_to_10", "label": "Yes, up to $10/month", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 0, "store": 0, "custom": 0 } },
-        { "id": "20_30", "label": "Yes, $20–$30/month is fine", "weight": { "landing": 0, "portfolio": 2, "business": 2, "booking": 2, "store": 1, "custom": 0 } },
+        { "id": "20_30", "label": "Yes, $20-$30/month is fine", "weight": { "landing": 0, "portfolio": 2, "business": 2, "booking": 2, "store": 1, "custom": 0 } },
         { "id": "minimal_costs", "label": "No, I want minimal ongoing costs", "weight": { "landing": 3, "portfolio": 1, "business": 1, "booking": 0, "store": -1, "custom": 1 } },
         { "id": "no_subscription", "label": "I prefer a website without any subscription", "weight": { "landing": 3, "portfolio": 0, "business": 0, "booking": -2, "store": -2, "custom": 2 } },
         { "id": "not_sure", "label": "I'm not sure", "weight": { "landing": 1, "portfolio": 1, "business": 1, "booking": 1, "store": 0, "custom": 0 } }
@@ -81,8 +81,8 @@
       "type": "radio",
       "options": [
         { "id": "under_500", "label": "Under $500", "weight": { "landing": 3, "portfolio": 2, "business": 1, "booking": 0, "store": -2, "custom": -3 } },
-        { "id": "500_1500", "label": "$500–$1500", "weight": { "landing": 2, "portfolio": 2, "business": 2, "booking": 2, "store": 1, "custom": -1 } },
-        { "id": "1500_5000", "label": "$1500–$5000", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 2, "store": 2, "custom": 1 } },
+        { "id": "500_1500", "label": "$500-$1500", "weight": { "landing": 2, "portfolio": 2, "business": 2, "booking": 2, "store": 1, "custom": -1 } },
+        { "id": "1500_5000", "label": "$1500-$5000", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 2, "store": 2, "custom": 1 } },
         { "id": "over_5000", "label": "Over $5000", "weight": { "landing": 0, "portfolio": 1, "business": 1, "booking": 1, "store": 2, "custom": 3 } }
       ]
     }
@@ -104,9 +104,9 @@
         "First website",
         "Minimal budget"
       ],
-      "monthlyCost": "None",
-      "oneTimeCost": "Under $500",
-      "timeline": "3–5 days",
+      "monthlyCost": "None or $5-20/month",
+      "oneTimeCost": "From $250",
+      "timeline": "3-5 days",
       "editable": "Via custom code or custom dashboard"
     },
     "portfolio": {
@@ -114,7 +114,7 @@
       "subtitle": "For Creators & Freelancers",
       "description": "Perfect for creators, freelancers, coaches, artists, and trainers who want to showcase their work.",
       "features": [
-        "3–5 pages",
+        "3-5 pages",
         "Portfolio, services, about, contact",
         "Editable via intuitive platform",
         "Quick launch",
@@ -126,14 +126,14 @@
         "Coaches & trainers",
         "Small creators"
       ],
-      "monthlyCost": "$16–$27/month",
-      "oneTimeCost": "$1000–$3000",
-      "timeline": "1–2 weeks",
+      "monthlyCost": "$16-27/month",
+      "oneTimeCost": "From $500",
+      "timeline": "1-2 weeks",
       "editable": "Yes, via Wix/Squarespace or similar"
     },
     "business": {
       "title": "Business Website",
-      "subtitle": "4–7 Pages for Growing Businesses",
+      "subtitle": "4-7 Pages for Growing Businesses",
       "description": "A solid website for a growing business or organization with room for content and SEO.",
       "features": [
         "Home + services + about + contact + optional blog",
@@ -148,9 +148,9 @@
         "Consulting & agencies",
         "Organizations"
       ],
-      "monthlyCost": "$5–$30/month (depending on platform)",
-      "oneTimeCost": "$1500–$5000",
-      "timeline": "2–4 weeks",
+      "monthlyCost": "$5-30/month",
+      "oneTimeCost": "From $1,000",
+      "timeline": "2-4 weeks",
       "editable": "Yes, via WordPress or Wix"
     },
     "booking": {
@@ -171,14 +171,14 @@
         "Medical practices",
         "Beauty professionals"
       ],
-      "monthlyCost": "$5–$34/month (depending on platform)",
-      "oneTimeCost": "$1500–$3000",
-      "timeline": "1–3 weeks",
+      "monthlyCost": "$5-34/month",
+      "oneTimeCost": "From $700",
+      "timeline": "1-3 weeks",
       "editable": "Partially editable via booking platform"
     },
     "store": {
       "title": "Small Online Store",
-      "subtitle": "eCommerce for 1–50 Products",
+      "subtitle": "eCommerce for 1-50 Products",
       "description": "For selling physical or digital products with secure payments and inventory management.",
       "features": [
         "Product catalog",
@@ -193,9 +193,9 @@
         "Digital product creators",
         "Side hustles"
       ],
-      "monthlyCost": "$5–$39/month (depending on platform)",
-      "oneTimeCost": "$2000–$5000",
-      "timeline": "2–4 weeks",
+      "monthlyCost": "$39/month (Shopify) or variable",
+      "oneTimeCost": "From $1,200",
+      "timeline": "2-4 weeks",
       "editable": "Yes, via Shopify or WooCommerce"
     },
     "custom": {
@@ -215,10 +215,32 @@
         "High-traffic sites",
         "Companies with specific needs"
       ],
-      "monthlyCost": "Optional support only ($200–$500/month)",
-      "oneTimeCost": "From $4000+",
-      "timeline": "4–8 weeks",
+      "monthlyCost": "Hosting only: no platform fees",
+      "oneTimeCost": "From $3,500",
+      "timeline": "4-8 weeks",
       "editable": "Via custom dashboard or agency support"
+    }
+    ,
+    "education": {
+      "title": "Education / School / Club Website",
+      "subtitle": "Pages, schedules, events & groups",
+      "description": "A flexible site for schools, clubs or educational programs with schedules, galleries and group pages.",
+      "features": [
+        "Multiple pages for classes and schedules",
+        "Events & registration",
+        "Galleries and staff pages",
+        "Simple content management",
+        "Optional booking or payments"
+      ],
+      "bestFor": [
+        "Schools & clubs",
+        "Teachers and course creators",
+        "Community organizations"
+      ],
+      "monthlyCost": "$5-30/month",
+      "oneTimeCost": "From $1,000",
+      "timeline": "2-4 weeks",
+      "editable": "Yes, via CMS or platform"
     }
   }
 }
