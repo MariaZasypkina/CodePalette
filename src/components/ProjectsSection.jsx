@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Card from "../common/Card";
 import playWinThumb from "../assets/projects/play-and-win.png";
 import kindNetImg from "../assets/projects/kindnet.png";
 import artHiveImg from "../assets/projects/arthive.png";
 import fencingImg from "../assets/projects/fencing.png";
-import { Link } from "react-router-dom";
 
 export default function ProjectsSection() {
   const projects = [
@@ -48,16 +49,25 @@ export default function ProjectsSection() {
   return (
     <section className="bg-gray-50 py-16 px-4 text-sage-dark">
       <div className="max-w-5xl mx-auto">
+        {/* Clickable Quiz Banner placed above projects title */}
+        <Link to="/quiz" className="block mb-12">
+          <div className="bg-gradient-to-br from-lavender-light via-white to-sage-light p-6 rounded-2xl text-center hover:shadow-lg transition">
+            <h3 className="text-2xl md:text-3xl font-bold text-lavender-dark mb-2">
+              Not sure what kind of website you need?
+            </h3>
+            <p className="text-sage-dark max-w-2xl mx-auto">
+              Take a quick quiz and get a tailored recommendation in under 30 seconds.
+            </p>
+          </div>
+        </Link>
+
         <h2 className="text-3xl font-semibold mb-8 text-lavender-dark">
           Favorite Projects of Our Studio
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div
-              key={project.id}
-              className="p-6 border border-gray-200 rounded-2xl shadow-md bg-white flex flex-col"
-            >
+            <Card key={project.id}>
               {project.image && (
                 <Link to={project.details}>
                   <img
@@ -75,7 +85,6 @@ export default function ProjectsSection() {
               <p className="mb-4">{project.description}</p>
 
               <div className="flex gap-4 mt-auto">
-                {/* only current links */}
                 {project.github && (
                   <a
                     href={project.github}
@@ -93,7 +102,7 @@ export default function ProjectsSection() {
                   </a>
                 )}
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>

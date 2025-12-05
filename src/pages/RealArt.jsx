@@ -1,30 +1,15 @@
-
 import React from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import PageLayout from "../layouts/PageLayout";
 
 export default function RealArt() {
   return (
-    <main>
-      <Navbar />
-
-    <div className="px-6 pt-4 text-left">
-      <Link
-        to="/"
-        className="inline-flex items-center gap-2 text-lavender-dark hover:text-lavender"
-      >
-        <span className="text-xl leading-none">←</span>
-        <span>Home</span>
-      </Link>
-    </div>
-
-    <div className="min-h-screen p-8 bg-white text-sage-dark">
-      <h1 className="text-4xl font-bold text-lavender-dark">GALLERY OF OUR ARTWORKS </h1>
-      <p className="mt-4 text-lg">Coming soon: Browse and purchase our paintings and digital art!</p>
-    </div>
-    
-<Footer />
-    </main>
+    <PageLayout>
+      <div className="min-h-screen p-8 bg-white text-sage-dark">
+        <div className="max-w-5xl mx-auto space-y-6">
+          <h1 className="text-4xl font-bold text-lavender-dark">Gallery of Our Artworks</h1>
+          <p className="text-lg">Coming soon: Browse and purchase our paintings and digital art!</p>
+        </div>
+      </div>
+    </PageLayout>
   );
 }
