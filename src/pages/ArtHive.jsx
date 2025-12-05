@@ -23,7 +23,7 @@ export default function ArtHive() {
     items: [
       {
         label: "Weekly Challenges",
-        text: "browse active prompts with topics, descriptions, and deadlines—available to everyone.",
+        text: "browse active prompts with topics, descriptions, and deadlines: available to everyone.",
       },
       {
         label: "Artwork Gallery",
@@ -47,7 +47,7 @@ export default function ArtHive() {
   const frontendOverview = {
     title: "Frontend Overview",
     description:
-      "Fast, responsive, and comfortable for artists—focused on clarity, smooth navigation, and a distraction-free interface.",
+      "Fast, responsive, and comfortable for artists: focused on clarity, smooth navigation, and a distraction-free interface.",
     listItems: [
       "React 19 + Vite for a quick workflow",
       "React Router for clean page transitions",

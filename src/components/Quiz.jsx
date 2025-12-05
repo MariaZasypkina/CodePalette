@@ -43,7 +43,7 @@ export default function Quiz() {
   };
 
   const calculateResult = () => {
-    const websiteTypes = ["landing", "portfolio", "business", "booking", "store", "custom"];
+    const websiteTypes = Object.keys(quizData.results);
     const calculatedScores = {};
 
     // Initialize scores
@@ -146,23 +146,25 @@ export default function Quiz() {
           </div>
         </div>
 
-        <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
-          <p className="text-sage-dark mb-4">
-            <span className="font-semibold">Can you edit it yourself?</span> {resultData.editable}
-          </p>
-          <button className="btn-primary w-full">Request Your Quote</button>
-        </div>
+          <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm max-w-5xl mx-auto">
+            <div className="flex gap-3">
+              <a href="/pricing" className="btn-outline flex-1 text-center">See pricing</a>
+              <button className="btn-primary flex-1">Request Your Quote</button>
+            </div>
+          </div>
 
-        <button
-          onClick={() => {
-            setCurrentQuestion(0);
-            setAnswers({});
-            setResult(null);
-          }}
-          className="btn-outline w-full"
-        >
-          Retake Quiz
-        </button>
+          <div className="max-w-5xl mx-auto">
+            <button
+              onClick={() => {
+                setCurrentQuestion(0);
+                setAnswers({});
+                setResult(null);
+              }}
+              className="w-full sm:w-1/2 mx-auto block mt-4 px-6 py-3 rounded-full bg-lavender-dark text-white hover:scale-105 transition"
+            >
+              Retake Quiz
+            </button>
+          </div>
       </div>
     );
   }
@@ -189,7 +191,46 @@ export default function Quiz() {
 
       {/* Options */}
       <div className="space-y-3">
-        {question.options.map((option) => {
+        {(() => {
+          // Determine if options appear monetary and sort cheapest→most expensive when applicable
+          const hasMoneyHint = question.options.some((opt) => /\$|\b(no|none|minimal|free|under|over|up to)\b/i.test(opt.label));
+
+          const parseCost = (label) => {
+            if (!label) return Number.POSITIVE_INFINITY;
+            const l = label.toLowerCase();
+            if (/\b(no|none|minimal|without any subscription)\b/.test(l)) return 0;
+            if (/\bfree\b/.test(l)) return 0;
+
+            // If label contains 'under' treat as slightly less than the number
+            const underMatch = l.match(/under\s*\$?(\d{1,3}(?:[.,]\d{3})*(?:\.\d+)?)/);
+            if (underMatch) {
+              const num = parseFloat(underMatch[1].replace(/,/g, ""));
+              return isNaN(num) ? Number.NEGATIVE_INFINITY : Math.max(0, num - 0.5);
+            }
+
+            // If label contains 'over' treat as larger than the number
+            const overMatch = l.match(/over\s*\$?(\d{1,3}(?:[.,]\d{3})*(?:\.\d+)?)/);
+            if (overMatch) {
+              const num = parseFloat(overMatch[1].replace(/,/g, ""));
+              return isNaN(num) ? Number.POSITIVE_INFINITY : num + 100000;
+            }
+
+            // look for numbers (handles ranges like 20-30 and values like 1500)
+            const m = l.match(/(\d{1,3}(?:[.,]\d{3})*(?:\.\d+)?)/);
+            if (m) {
+              const num = parseFloat(m[0].replace(/,/g, ""));
+              return isNaN(num) ? Number.POSITIVE_INFINITY : num;
+            }
+
+            // fallback: push unknowns toward the bottom
+            return Number.POSITIVE_INFINITY;
+          };
+
+          const optionsToRender = hasMoneyHint
+            ? [...question.options].sort((a, b) => parseCost(a.label) - parseCost(b.label))
+            : question.options;
+
+          return optionsToRender.map((option) => {
           const isSelected = (answers[currentQuestion] || []).includes(option.id);
           const InputType = question.type === "radio" ? "radio" : "checkbox";
 
@@ -219,7 +260,8 @@ export default function Quiz() {
               </span>
             </label>
           );
-        })}
+          });
+        })()}
       </div>
 
       {/* Navigation buttons */}

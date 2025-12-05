@@ -13,6 +13,7 @@ import SignIn from "./pages/SignIn";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import QuizPage from "./pages/QuizPage";
+import Pricing from "./pages/Pricing";
 
 export default function AppRoutes() {
   return (
@@ -23,6 +24,7 @@ export default function AppRoutes() {
       <Route path="/about" element={<AboutUs />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/quiz" element={<QuizPage />} />
+      <Route path="/pricing" element={<Pricing />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/play-and-win" element={<PlayAndWin />} />
       <Route path="/arthive" element={<ArtHive />} />

@@ -16,12 +16,12 @@ export default function QuizPage() {
               Take a quick quiz and get a tailored recommendation in under 30 seconds.
             </p>
             <p className="text-base text-sage font-semibold">
-              Find the right website for your business — 6 quick questions.
+              Find the right website for your business: 6 quick questions.
             </p>
           </div>
 
           {/* Quiz Component */}
-          <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
+          <div className="max-w-5xl mx-auto">
             <Quiz />
           </div>
         </div>
