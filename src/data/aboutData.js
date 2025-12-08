@@ -1,7 +1,7 @@
 export const aboutText = {
   title: "About Creative Code Palette",
   description:
-    "At Creative Code Palette Studio, we blend technical expertise with artistic vision to craft intuitive, stylish, and user-centered digital products. Our work is driven by curiosity, empathy, and a belief that functionality should never come at the expense of beauty. From the first line of code to the final pixel, we design experiences that inspire and empower.",
+    "At Creative Code Palette Studio, we blend technical expertise with artistic vision to craft intuitive, stylish, and user-centered digital products. Our work is driven by curiosity, empathy, and a belief that functionality should never come at the expense of beauty, from the first line of code to the final pixel.",
 };
 
 export const skills = [
