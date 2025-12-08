@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 import quizData from "../data/quizData.json";
 
 export default function Quiz() {
@@ -148,22 +149,22 @@ export default function Quiz() {
 
           <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm max-w-5xl mx-auto">
             <div className="flex gap-3">
-              <a href="/pricing" className="btn-outline flex-1 text-center">See pricing</a>
-              <button className="btn-primary flex-1">Request Your Quote</button>
+              <Button href="/pricing" className="flex-1 text-center">See pricing</Button>
+              <Button variant="primary" className="flex-1">Request Your Quote</Button>
             </div>
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <button
+            <Button
               onClick={() => {
                 setCurrentQuestion(0);
                 setAnswers({});
                 setResult(null);
               }}
-              className="w-full sm:w-1/2 mx-auto block mt-4 px-6 py-3 rounded-full bg-lavender-dark text-white hover:scale-105 transition"
+              className="w-full sm:w-1/2 mx-auto block mt-4"
             >
               Retake Quiz
-            </button>
+            </Button>
           </div>
       </div>
     );
@@ -227,7 +228,9 @@ export default function Quiz() {
           };
 
           const optionsToRender = hasMoneyHint
-            ? [...question.options].sort((a, b) => parseCost(a.label) - parseCost(b.label))
+            ? question.id === 6
+              ? question.options // Preserve explicit order for budget question
+              : [...question.options].sort((a, b) => parseCost(a.label) - parseCost(b.label))
             : question.options;
 
           return optionsToRender.map((option) => {
@@ -266,20 +269,21 @@ export default function Quiz() {
 
       {/* Navigation buttons */}
       <div className="flex gap-4 mt-8">
-        <button
+        <Button
           onClick={handlePrevious}
           disabled={currentQuestion === 0}
-          className="btn-outline flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Previous
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={handleNext}
           disabled={(answers[currentQuestion] || []).length === 0}
-          className="btn-primary flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
+          variant="primary"
+          className="flex-1 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {currentQuestion === quizData.questions.length - 1 ? "See Results" : "Next"}
-        </button>
+        </Button>
       </div>
     </div>
   );

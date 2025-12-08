@@ -82,8 +82,8 @@
       "options": [
         { "id": "under_500", "label": "Under $500", "weight": { "landing": 3, "portfolio": 2, "business": 1, "booking": 0, "store": -2, "custom": -3 } },
         { "id": "500_1500", "label": "$500-$1500", "weight": { "landing": 2, "portfolio": 2, "business": 2, "booking": 2, "store": 1, "custom": -1 } },
-        { "id": "1500_5000", "label": "$1500-$5000", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 2, "store": 2, "custom": 1 } },
-        { "id": "over_5000", "label": "Over $5000", "weight": { "landing": 0, "portfolio": 1, "business": 1, "booking": 1, "store": 2, "custom": 3 } }
+        { "id": "1500_5000", "label": "$1500-$3000", "weight": { "landing": 0, "portfolio": 1, "business": 2, "booking": 2, "store": 2, "custom": 1 } },
+        { "id": "over_5000", "label": "Over $3000", "weight": { "landing": 0, "portfolio": 1, "business": 1, "booking": 1, "store": 2, "custom": 3 } }
       ]
     }
   ],
@@ -199,7 +199,7 @@
       "editable": "Yes, via Shopify or WooCommerce"
     },
     "custom": {
-      "title": "Custom React/Next.js Premium Website",
+      "title": "Custom Premium Website",
       "subtitle": "Top Performance & Scalability",
       "description": "For clients who want top performance, custom functionality, and no platform constraints.",
       "features": [
@@ -215,7 +215,7 @@
         "High-traffic sites",
         "Companies with specific needs"
       ],
-      "monthlyCost": "Hosting only: no platform fees",
+      "monthlyCost": "Hosting only, no platform fees",
       "oneTimeCost": "From $3,500",
       "timeline": "4-8 weeks",
       "editable": "Via custom dashboard or agency support"

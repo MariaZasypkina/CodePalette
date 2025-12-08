@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from './Button';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -67,7 +68,7 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="John Doe"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 border border-sage-light rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender-dark focus:border-lavender-dark"
         />
       </div>
 
@@ -83,7 +84,7 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="john@example.com"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 border border-sage-light rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender-dark focus:border-lavender-dark"
         />
       </div>
 
@@ -98,7 +99,7 @@ export default function ContactForm() {
           value={formData.subject}
           onChange={handleChange}
           placeholder="Project inquiry"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 border border-sage-light rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender-dark focus:border-lavender-dark"
         />
       </div>
 
@@ -114,7 +115,7 @@ export default function ContactForm() {
           placeholder="Tell us about your project..."
           rows="5"
           required
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+          className="w-full px-4 py-2 border border-sage-light rounded-lg focus:outline-none focus:ring-2 focus:ring-lavender-dark focus:border-lavender-dark resize-none"
         />
       </div>
 
@@ -130,13 +131,14 @@ export default function ContactForm() {
         </div>
       )}
 
-      <button
+      <Button
         type="submit"
         disabled={loading}
-        className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:bg-gray-400 transition"
+        full
+        className="text-center disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {loading ? 'Sending...' : 'Send Message'}
-      </button>
+      </Button>
     </form>
   );
 }
