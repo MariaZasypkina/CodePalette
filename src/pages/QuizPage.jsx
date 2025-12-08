@@ -1,8 +1,23 @@
 import React from "react";
 import PageLayout from "../layouts/PageLayout";
 import Quiz from "../components/Quiz";
+import useSEO from "../hooks/useSEO";
 
 export default function QuizPage() {
+  useSEO({
+    title: "Website Type Quiz",
+    description:
+      "Take a quick quiz to find the best website type for your business—landing page, booking site, portfolio, or e-commerce. Tailored for US small businesses.",
+    keywords: [
+      "website quiz",
+      "what website do I need",
+      "landing page quiz",
+      "web design services",
+      "custom website design",
+    ],
+    canonicalPath: "/quiz",
+  });
+
   return (
     <PageLayout>
       <section className="section-padding">
