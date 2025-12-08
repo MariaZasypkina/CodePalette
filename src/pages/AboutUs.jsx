@@ -1,8 +1,24 @@
 import React from "react";
 import PageLayout from "../layouts/PageLayout";
 import { aboutText, skills, values } from "../data/aboutData";
+import useSEO from "../hooks/useSEO";
 
 export default function AboutUs() {
+  useSEO({
+    title: "About Our Web Design Studio",
+    description:
+      "Creative Code Palette Studio blends technical expertise and artistic vision to design modern, user-centered websites for US small businesses and startups.",
+    keywords: [
+      "web design studio",
+      "modern web design",
+      "responsive web design",
+      "custom website design",
+      "Colorado web design",
+      "web design agency USA",
+    ],
+    canonicalPath: "/about",
+  });
+
   return (
     <PageLayout>
       <section className="section-padding">

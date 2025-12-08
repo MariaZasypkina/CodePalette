@@ -1,10 +1,25 @@
 import React from "react";
 import PageLayout from "../layouts/PageLayout";
 import ContactForm from "../components/ContactForm";
+import useSEO from "../hooks/useSEO";
 
 const CONTACT_EMAIL = "creative.code.palette@gmail.com";
 
 export default function Contact() {
+  useSEO({
+    title: "Contact Our Web Design Agency",
+    description:
+      "Contact Creative Code Palette Studio for custom website design, landing pages, and small business web projects. Serving US-based clients with modern, responsive design.",
+    keywords: [
+      "contact web design agency",
+      "web design services",
+      "custom website design",
+      "landing page design",
+      "web design company USA",
+    ],
+    canonicalPath: "/contact",
+  });
+
   return (
     <PageLayout>
       <section className="section-padding">

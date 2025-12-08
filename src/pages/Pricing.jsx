@@ -1,8 +1,24 @@
 import React from "react";
 import PageLayout from "../layouts/PageLayout";
 import quizData from "../data/quizData.json";
+import useSEO from "../hooks/useSEO";
 
 export default function Pricing() {
+  useSEO({
+    title: "Web Design Pricing & Packages",
+    description:
+      "Transparent web design pricing for custom websites, landing pages, and small business sites. View starting costs and monthly estimates from Creative Code Palette Studio.",
+    keywords: [
+      "web design pricing",
+      "website design cost",
+      "landing page pricing",
+      "custom website design",
+      "web design services",
+      "web design agency",
+    ],
+    canonicalPath: "/pricing",
+  });
+
   const order = [
     "landing",
     "portfolio",

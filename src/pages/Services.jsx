@@ -2,8 +2,25 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PageLayout from "../layouts/PageLayout";
 import Card from "../common/Card";
+import useSEO from "../hooks/useSEO";
 
 export default function Services() {
+  useSEO({
+    title: "Web Design Services & Landing Pages",
+    description:
+      "Web design agency for US small businesses and startups. We build custom websites, landing pages, and modern product sites that are responsive and conversion-focused.",
+    keywords: [
+      "web design services",
+      "web design agency",
+      "landing page design",
+      "custom website design",
+      "modern web design",
+      "website design for small business",
+      "conversion-focused web design",
+    ],
+    canonicalPath: "/services",
+  });
+
   const services = [
     {
       id: 1,
