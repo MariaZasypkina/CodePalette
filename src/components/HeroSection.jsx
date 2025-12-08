@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 export default function HeroSection() {
   return (
@@ -12,16 +13,8 @@ export default function HeroSection() {
           experiences
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-          <a
-            href="/projects"
-            className="btn-outline
-          "
-          >
-            View Projects
-          </a>
-          <a href="/contact" className="btn-outline">
-            Contact Us
-          </a>
+          <Button href="/projects">View Projects</Button>
+          <Button href="/contact">Contact Us</Button>
         </div>
       </div>
 

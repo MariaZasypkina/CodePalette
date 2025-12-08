@@ -3,23 +3,28 @@ import PageLayout from "../layouts/PageLayout";
 import quizData from "../data/quizData.json";
 
 export default function Pricing() {
-  // Parse cost for sorting: extract first number from string
-  const parseCostValue = (costStr) => {
-    if (!costStr) return Infinity;
-    const match = costStr.match(/\d+/);
-    return match ? parseInt(match[0], 10) : Infinity;
-  };
+  const order = [
+    "landing",
+    "portfolio",
+    "booking",
+    "business",
+    "education",
+    "store",
+    "custom",
+  ];
 
-  const rows = Object.entries(quizData.results)
-    .map(([key, data]) => ({
-      key,
-      title: data.title,
-      oneTime: data.oneTimeCost,
-      monthly: data.monthlyCost,
-      subtitle: data.subtitle,
-      sortValue: parseCostValue(data.oneTimeCost),
-    }))
-    .sort((a, b) => a.sortValue - b.sortValue);
+  const rows = order
+    .map((key) => {
+      const data = quizData.results[key];
+      return {
+        key,
+        title: data.title,
+        oneTime: data.oneTimeCost,
+        monthly: data.monthlyCost,
+        subtitle: data.subtitle,
+      };
+    })
+    .filter(Boolean);
 
   return (
     <PageLayout>
