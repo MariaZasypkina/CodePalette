@@ -1,3 +1,5 @@
+Ceck this project out here: https://www.ccpalette.com
+
 
 <img width="983" height="726" alt="Screenshot 2025-12-22 at 3 01 55 PM" src="https://github.com/user-attachments/assets/c5acc384-c48a-4162-9c77-e5b7ab150eca" />
 
