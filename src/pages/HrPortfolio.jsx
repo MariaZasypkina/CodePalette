@@ -1,4 +1,9 @@
 import React from "react";
+import funnelImg from "../assets/hr/seasonal-funnel.png";
+import programSummaryImg from "../assets/hr/seasonal_program_chart.png";
+import cancellationReasonsImg from "../assets/hr/cancellation_reasons.png";
+import appsPlacementsImg from "../assets/hr/applications-vs-placements.png";
+import regPerformImg from "../assets/hr/regional-performance.png";
 
 export default function HrPortfolio() {
   return (
@@ -94,7 +99,7 @@ export default function HrPortfolio() {
                 Coordinated seasonal hiring cycles for international camp and
                 work‑travel programs with peak volumes of 2,000+ candidates per
                 year across multiple U.S. host employers. Managed applications
-                for 10,000+ participants over tenure. [file:1]
+                for 10,000+ participants over tenure.
               </p>
 
               <h4 className="font-semibold text-sage-dark mb-1">
@@ -158,14 +163,6 @@ export default function HrPortfolio() {
               <h4 className="font-semibold text-sage-dark mb-1">
                 Sample Artifacts (Anonymized)
               </h4>
-              <p className="list-default">
-                Example of a seasonal candidate funnel I used to monitor volume
-                and conversion at each stage (dummy data, real structure).
-              </p>
-              <img
-                src="src/assets/hr/seasonal-funnel.png"
-                alt="Seasonal candidate funnel example"
-              />
 
               <ul className="list-default">
                 <li>
@@ -182,6 +179,12 @@ export default function HrPortfolio() {
                   confirmed).
                 </li>
               </ul>
+
+              <img src={funnelImg} alt="Seasonal candidate funnel example" />
+              <p className="list-default">
+                Example of a seasonal candidate funnel I used to monitor volume
+                and conversion at each stage (dummy data, real structure).
+              </p>
             </article>
 
             {/* Case 2 */}
@@ -258,24 +261,6 @@ export default function HrPortfolio() {
                 Sample Artifacts (Anonymized)
               </h4>
 
-              <p className="list-default">
-                Example seasonal program summary showing key recruitment and
-                arrival metrics (dummy data, real reporting structure).
-              </p>
-              <img
-                src="src/assets/hr/seasonal_program_chart.png"
-                alt="Seasonal program summary example"
-              />
-
-              <p className="list-default">
-                Example breakdown of cancellation reasons for one season (dummy
-                data).
-              </p>
-              <img
-                src="src/assets/hr/cancellation_reasons.png"
-                alt="Cancellation reasons breakdown example"
-              />
-
               <ul className="list-default">
                 <li>
                   Onboarding checklist template for a specific program type
@@ -290,6 +275,22 @@ export default function HrPortfolio() {
                   program (summary data only).
                 </li>
               </ul>
+              <p className="list-default">
+                Example seasonal program summary showing key recruitment and
+                arrival metrics (dummy data, real reporting structure).
+              </p>
+              <img
+                src={programSummaryImg}
+                alt="Seasonal program summary example"
+              />
+              <p className="list-default">
+                Example breakdown of cancellation reasons for one season (dummy
+                data).
+              </p>
+              <img
+                src={cancellationReasonsImg}
+                alt="Cancellation reasons breakdown example"
+              />
             </article>
 
             {/* Case 3 */}
@@ -363,16 +364,6 @@ export default function HrPortfolio() {
                 Sample Artifacts (Anonymized)
               </h4>
 
-              <p className="list-default">
-                Example of a simple performance snapshot I used to monitor
-                application volume, conversion, and on-time documentation across
-                regions (dummy data).
-              </p>
-              <img
-                src="src/assets/hr/regional-performance.png"
-                alt="Regional reps performance snapshot example"
-              />
-
               <ul className="list-default">
                 <li>
                   Excerpt from the regional representative handbook (roles,
@@ -387,6 +378,16 @@ export default function HrPortfolio() {
                   for reps.
                 </li>
               </ul>
+
+              <img
+                src={regPerformImg}
+                alt="Regional reps performance snapshot example"
+              />
+              <p className="list-default">
+                Example of a simple performance snapshot I used to monitor
+                application volume, conversion, and on-time documentation across
+                regions (dummy data).
+              </p>
             </article>
 
             {/* Case 4 */}
@@ -472,8 +473,7 @@ export default function HrPortfolio() {
                   High-level visualization of seasonal application vs. placement
                   dynamics (e.g., simple chart or infographic).
                   <img
-                    src="src/assets/hr/applications-vs-placements.png
-  "
+                    src={appsPlacementsImg}
                     alt="Seasonal applications vs placements example"
                   />
                 </li>
