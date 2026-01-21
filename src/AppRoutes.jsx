@@ -14,6 +14,8 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import QuizPage from "./pages/QuizPage";
 import Pricing from "./pages/Pricing";
+import HrPortfolio from "./pages/HrPortfolio";
+
 
 export default function AppRoutes() {
   return (
@@ -32,6 +34,7 @@ export default function AppRoutes() {
       <Route path="/fencing" element={<Fencing />} />
       <Route path="/art" element={<RealArt />} />
       <Route path="/member" element={<SignIn />} />
+      <Route path="/HrPortfolio" element={<HrPortfolio />} />
     </Routes>
   );
 }
