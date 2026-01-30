@@ -9,18 +9,26 @@ import useSEO from "./hooks/useSEO"
 
 export default function App() {
   useSEO({
-    title: "Modern Web Design for Small Businesses",
+    title: "Modern Web Development Lab",
     description:
-      "US-based web design agency crafting custom websites, landing pages, and small e-commerce for startups and small businesses. Modern, responsive, conversion-focused.",
+      "Modern web development studio building fast, clean, and maintainable websites for small businesses and startups. We focus on thoughtful architecture, accessible interfaces, and code that is easy to scale and support.",
     keywords: [
       "modern web design",
-      "website design for small business",
-      "custom website design",
-      "landing page design",
-      "conversion-focused web design",
+      "modern web developement",
+      "website for small business",
+      "custom website",
+      "landing page",
+      "conversion-focused web",
       "web design agency",
       "web design services",
-      "Colorado web design studio",
+      "Colorado web studio",
+      "Creative Code Palette",
+      "web development services", 
+      "web development studio",
+      "custom web development", 
+      "modern web development",
+      "responsive websites", 
+      "US web development",
     ],
     canonicalPath: "/",
   });
