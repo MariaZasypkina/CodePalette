@@ -4,7 +4,7 @@ import Card from "../common/Card";
 import playWinThumb from "../assets/projects/play-and-win.png";
 import kindNetImg from "../assets/projects/kindnet.png";
 import artHiveImg from "../assets/projects/arthive.png";
-import fencingImg from "../assets/projects/fencing.png";
+import lexiesScrubsImg from "../assets/projects/lexies-scrubs/lexie_scrubs_main_new_scn.png";
 
 export default function ProjectsSection() {
   const projects = [
@@ -37,12 +37,12 @@ export default function ProjectsSection() {
     },
     {
       id: 4,
-      title: "Youth Fencing Team Support Page",
+      title: "Lexies Scrubs: science facts that unfold like small investigations",
       description:
-        "This project is created to help to raise funds for the youth Denver Fencing Team",
-      github: "https://github.com/MariaZasypkina/FencingNonProfit.git",
+        "A science education platform with fact investigations, myth checks, reader questions, and a content dashboard.",
+      github: "https://github.com/MariaZasypkina/Lexies-Scrubs.git",
       details: "/fencing",
-      image: fencingImg,
+      image: lexiesScrubsImg,
     },
   ];
 
@@ -70,11 +70,13 @@ export default function ProjectsSection() {
             <Card key={project.id}>
               {project.image && (
                 <Link to={project.details}>
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="rounded-xl mb-4 shadow-md hover:shadow-lg transition-shadow"
-                  />
+                  <div className="mb-4 aspect-[16/10] overflow-hidden rounded-xl shadow-md transition-shadow hover:shadow-lg">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="h-full w-full object-cover object-top"
+                    />
+                  </div>
                 </Link>
               )}
 
