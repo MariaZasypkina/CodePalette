@@ -31,7 +31,7 @@ export default function AboutUs() {
           </div>
 
           <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-sm space-y-4 text-sage-dark">
-            <h2 className="text-2xl font-semibold text-lavender-dark">What We Do</h2>
+            <h2 className="text-3xl font-bold text-lavender-dark">What We Do</h2>
             <p className="text-lg leading-relaxed">
               We design and develop custom websites, landing pages, and small e-commerce experiences that help your ideas look clear, credible, and ready for growth. In addition to web design and development, the studio creates tailored chatbots, refines user journeys, and supports on-page SEO so your digital presence works smoothly for both humans and search engines.
             </p>
@@ -42,7 +42,7 @@ export default function AboutUs() {
 
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-2xl font-semibold mb-4 text-sage-dark">
+              <h2 className="text-3xl font-bold mb-4 text-sage-dark">
                 Our Toolbox
               </h2>
               <ul className="flex flex-wrap gap-3">
@@ -58,7 +58,7 @@ export default function AboutUs() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold mb-4 text-sage-dark">
+              <h2 className="text-3xl font-bold mb-4 text-sage-dark">
                 Our Values
               </h2>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-8 list-disc list-inside text-sage-dark">

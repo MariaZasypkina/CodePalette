@@ -82,7 +82,7 @@ export default function Quiz() {
     const resultData = quizData.results[result];
     return (
       <div className="space-y-6">
-        <div className="bg-gradient-to-br from-lavender-light to-sage-light p-8 rounded-2xl">
+        <div className="bg-sage-light p-8 rounded-2xl">
           <p className="text-sm uppercase tracking-wide text-lavender mb-2">
             Your Perfect Match
           </p>
