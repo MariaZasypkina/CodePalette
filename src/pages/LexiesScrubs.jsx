@@ -7,7 +7,7 @@ import questionImg from "../assets/projects/lexies-scrubs/question-form.png";
 import adminImg from "../assets/projects/lexies-scrubs/admin.png";
 import mobileImg from "../assets/projects/lexies-scrubs/mobile-home.png";
 
-export default function Fencing() {
+export default function LexiesScrubs() {
   const showcaseItems = [
     {
       title: "Home",

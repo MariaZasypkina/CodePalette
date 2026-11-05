@@ -1,10 +1,11 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import App from "./App";
 import PlayAndWin from "./pages/PlayAndWin";
 import ArtHive from "./pages/ArtHive";
 import KindNet from "./pages/KindNet";
-import Fencing from "./pages/Fencing";
+import LexiesScrubs from "./pages/LexiesScrubs";
+import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
 import Projects from "./pages/Projects";
 import Shop from "./pages/Shop";
@@ -31,10 +32,12 @@ export default function AppRoutes() {
       <Route path="/play-and-win" element={<PlayAndWin />} />
       <Route path="/arthive" element={<ArtHive />} />
       <Route path="/kindnet" element={<KindNet />} />
-      <Route path="/fencing" element={<Fencing />} />
+      <Route path="/lexies-scrubs" element={<LexiesScrubs />} />
+      <Route path="/fencing" element={<Navigate to="/lexies-scrubs" replace />} />
       <Route path="/art" element={<RealArt />} />
       <Route path="/member" element={<SignIn />} />
       <Route path="/HrPortfolio" element={<HrPortfolio />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

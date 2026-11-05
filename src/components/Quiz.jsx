@@ -150,7 +150,7 @@ export default function Quiz() {
           <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm max-w-5xl mx-auto">
             <div className="flex gap-3">
               <Button href="/pricing" className="flex-1 text-center">See pricing</Button>
-              <Button variant="primary" className="flex-1">Request Your Quote</Button>
+              <Button href="/contact" variant="primary" className="flex-1">Request Your Quote</Button>
             </div>
           </div>
 

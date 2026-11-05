@@ -68,14 +68,14 @@ export default function HrPortfolio() {
               Detail-oriented HR and People Operations specialist with 20+ years
               of experience coordinating international seasonal programs,
               high-volume recruitment, and end-to-end onboarding for 10,000+
-              participants across multiple U.S. employers. [file:1]
+              participants across multiple U.S. employers.
             </p>
             <p className="text-block">
               Skilled at managing candidate pipelines, HR documentation, and
               cross-functional workflows while maintaining accuracy,
               confidentiality, and strong organizational standards. Experienced
               in working with distributed teams, HR/registration systems, and
-              data to improve speed and quality of HR operations. [file:1]
+              data to improve speed and quality of HR operations.
             </p>
           </section>
 
@@ -146,12 +146,12 @@ export default function HrPortfolio() {
                 <li>
                   Processed applications for 10,000+ participants over tenure
                   while consistently meeting program and employer placement
-                  deadlines. [file:1]
+                  deadlines.
                 </li>
                 <li>
                   Reduced average application processing time by approximately
                   20% during peak periods by improving workflows and
-                  documentation standards. [file:1]
+                  documentation standards.
                 </li>
                 <li>
                   Minimized backlogs and last‑minute escalations by giving
@@ -200,7 +200,7 @@ export default function HrPortfolio() {
               <p className="text-block">
                 Responsible for onboarding international participants into
                 multiple U.S. host organizations, each with specific
-                documentation, compliance, and timeline requirements. [file:1]
+                documentation, compliance, and timeline requirements.
               </p>
 
               <h4 className="font-semibold text-sage-dark mb-1">
@@ -306,7 +306,7 @@ export default function HrPortfolio() {
               <p className="text-block">
                 Led a distributed network of 30+ regional representatives
                 responsible for local candidate sourcing, application support,
-                and initial screening across multiple markets. [file:1]
+                and initial screening across multiple markets.
               </p>
 
               <h4 className="font-semibold text-sage-dark mb-1">
@@ -403,7 +403,7 @@ export default function HrPortfolio() {
               <p className="text-block">
                 Prepared statistical and financial summaries to support
                 leadership decisions on program capacity, pricing, and staffing
-                for international seasonal programs. [file:1]
+                for international seasonal programs.
               </p>
 
               <h4 className="font-semibold text-sage-dark mb-1">
@@ -493,7 +493,7 @@ export default function HrPortfolio() {
                 experience in cash office operations and remote product/UX
                 quality assurance, which further strengthen my attention to
                 detail, data accuracy, and cross-functional collaboration.
-                [file:1]
+               
               </p>
               <ul className="list-default">
                 <li>
@@ -506,7 +506,7 @@ export default function HrPortfolio() {
                   web and mobile interfaces, identifying and documenting
                   linguistic, formatting, and functional issues, and
                   collaborating with distributed product teams using tools like
-                  JIRA. [file:1]
+                  JIRA.
                 </li>
               </ul>
             </article>
@@ -549,7 +549,7 @@ export default function HrPortfolio() {
             <ul className="list-default">
               <li>
                 Experience with HR/registration systems and internal databases
-                (e.g., CampMinder, internal ATS / HRIS tools). [file:1]
+                (e.g., CampMinder, internal ATS / HRIS tools).
               </li>
               <li>
                 Data exports, validation, and creation of structured reports for
@@ -561,7 +561,7 @@ export default function HrPortfolio() {
               </li>
               <li>
                 Basic SQL queries and data validation in relational databases.
-                [file:1]
+               
               </li>
             </ul>
 
@@ -571,11 +571,11 @@ export default function HrPortfolio() {
             <ul className="list-default">
               <li>
                 Microsoft Office (Word, Excel, Outlook), Google Workspace (Docs,
-                Sheets, Drive, Calendar). [file:1]
+                Sheets, Drive, Calendar).
               </li>
               <li>
                 Remote collaboration tools: Zoom, Microsoft Teams, Google Meet,
-                Slack, Trello. [file:1]
+                Slack, Trello.
               </li>
               <li>Issue tracking and QA tools such as JIRA.</li>
             </ul>
