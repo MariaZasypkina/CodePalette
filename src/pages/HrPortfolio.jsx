@@ -27,7 +27,7 @@ export default function HrPortfolio() {
               <h1 className="heading-md md:text-4xl mb-2">
                 HR / People Operations Portfolio
               </h1>
-              <p className="text-xl font-semibold text-lavender-dark mb-1">
+              <p className="text-xl font-semibold text-sage-dark mb-1">
                 Maria Zasypkina
               </p>
               <p className="text-sage-dark mb-2">Thornton, CO · Remote</p>
@@ -35,14 +35,14 @@ export default function HrPortfolio() {
                 Email:{" "}
                 <a
                   href="mailto:maria.zasy@yahoo.com"
-                  className="text-lavender-dark underline-offset-2 hover:underline"
+                  className="text-sage-dark underline-offset-2 hover:underline"
                 >
                   maria.zasy@yahoo.com
                 </a>{" "}
                 · Phone:{" "}
                 <a
                   href="tel:+17205902493"
-                  className="text-lavender-dark underline-offset-2 hover:underline"
+                  className="text-sage-dark underline-offset-2 hover:underline"
                 >
                   (720) 590-2493
                 </a>{" "}
@@ -51,7 +51,7 @@ export default function HrPortfolio() {
                   href="https://www.linkedin.com/in/maria-zasypkina"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lavender-dark underline-offset-2 hover:underline"
+                  className="text-sage-dark underline-offset-2 hover:underline"
                 >
                   www.linkedin.com/in/maria-zasypkina
                 </a>
@@ -596,7 +596,7 @@ export default function HrPortfolio() {
               Email:{" "}
               <a
                 href="mailto:maria.zasy@yahoo.com"
-                className="text-lavender-dark underline-offset-2 hover:underline"
+                className="text-sage-dark underline-offset-2 hover:underline"
               >
                 maria.zasy@yahoo.com
               </a>{" "}
@@ -605,7 +605,7 @@ export default function HrPortfolio() {
                 href="https://www.linkedin.com/in/maria-zasypkina"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lavender-dark underline-offset-2 hover:underline"
+                className="text-sage-dark underline-offset-2 hover:underline"
               >
                 www.linkedin.com/in/maria-zasypkina
               </a>

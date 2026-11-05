@@ -25,7 +25,7 @@ export default function Contact() {
       <section className="section-padding">
         <div className="container-centered space-y-10">
           <div className="space-y-4 text-left">
-            <h1 className="heading-md text-lavender-dark">
+            <h1 className="heading-md text-sage-dark">
               Get in Touch
             </h1>
             <p className="text-lg leading-relaxed">
@@ -44,7 +44,7 @@ export default function Contact() {
                     <p className="text-sage font-semibold mb-1">Email</p>
                     <a
                       href={`mailto:${CONTACT_EMAIL}`}
-                      className="text-lavender-dark hover:text-lavender"
+                      className="text-sage-dark hover:text-lavender"
                     >
                       creative.code.palette
                     </a>

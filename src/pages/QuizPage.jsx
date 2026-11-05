@@ -24,7 +24,7 @@ export default function QuizPage() {
         <div className="container-centered">
           {/* Hero Banner */}
           <div className="bg-sage-light p-8 rounded-2xl mb-12 text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-lavender-dark mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-sage-dark mb-4">
               Not sure what kind of website you need?
             </h1>
             <p className="text-lg text-sage-dark max-w-2xl mx-auto mb-2">

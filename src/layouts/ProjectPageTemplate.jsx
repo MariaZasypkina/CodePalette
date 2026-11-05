@@ -28,7 +28,7 @@ export default function ProjectPageTemplate({
             <p className="text-sm uppercase tracking-wide text-lavender">
               {subtitle}
             </p>
-            <h1 className="text-4xl font-bold text-lavender-dark">{title}</h1>
+            <h1 className="text-4xl font-bold text-sage-dark">{title}</h1>
             <p className="text-lg">{description}</p>
             {descriptionExtra && <p className="text-lg">{descriptionExtra}</p>}
           </header>
@@ -60,7 +60,7 @@ export default function ProjectPageTemplate({
           {/* What This Demonstrates */}
           {whatDemonstrates && (
             <Card>
-              <h2 className="text-2xl font-semibold text-lavender-dark mb-3">
+              <h2 className="text-2xl font-semibold text-sage-dark mb-3">
                 {whatDemonstrates.title}
               </h2>
               <ul className="space-y-2 list-disc list-inside">
@@ -86,7 +86,7 @@ export default function ProjectPageTemplate({
               <div className="mt-6 text-center">
                 <a
                   href={githubLink}
-                  className="text-lavender-dark hover:text-lavender underline"
+                  className="text-sage-dark hover:text-lavender underline"
                 >
                   View on GitHub
                 </a>

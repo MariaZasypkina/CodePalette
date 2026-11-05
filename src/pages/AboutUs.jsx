@@ -24,14 +24,14 @@ export default function AboutUs() {
       <section className="section-padding">
         <div className="container-centered space-y-10">
           <div className="space-y-4 text-left">
-            <h1 className="heading-md text-lavender-dark">
+            <h1 className="heading-md text-sage-dark">
               About Creative Code Palette
             </h1>
             <p className="text-lg leading-relaxed">{aboutText.description}</p>
           </div>
 
           <div className="bg-white p-6 md:p-8 rounded-2xl border border-gray-200 shadow-sm space-y-4 text-sage-dark">
-            <h2 className="text-3xl font-bold text-lavender-dark">What We Do</h2>
+            <h2 className="text-3xl font-bold text-sage-dark">What We Do</h2>
             <p className="text-lg leading-relaxed">
               We design and develop custom websites, landing pages, and small e-commerce experiences that help your ideas look clear, credible, and ready for growth. In addition to web design and development, the studio creates tailored chatbots, refines user journeys, and supports on-page SEO so your digital presence works smoothly for both humans and search engines.
             </p>

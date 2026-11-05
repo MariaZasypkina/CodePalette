@@ -18,7 +18,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="lg:hidden p-2 rounded-md text-lavender-dark hover:bg-sage-light transition"
+          className="lg:hidden p-2 rounded-md text-sage-dark hover:bg-sage-light transition"
           onClick={handleToggle}
           aria-label="Toggle navigation menu"
           aria-expanded={isOpen}
