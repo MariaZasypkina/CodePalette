@@ -36,7 +36,7 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6">
               <div>
-                <h2 className="text-2xl font-semibold mb-4 text-sage-dark">
+                <h2 className="text-3xl font-bold mb-4 text-sage-dark">
                   Contact Information
                 </h2>
                 <div className="space-y-4">
@@ -54,7 +54,7 @@ export default function Contact() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold mb-4 text-sage-dark">
+              <h2 className="text-3xl font-bold mb-4 text-sage-dark">
                 Send us a Message
               </h2>
               <ContactForm />

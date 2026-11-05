@@ -4,7 +4,7 @@ import ShowcaseItem from "./ShowcaseItem";
 export default function ShowcaseGrid({ items, posterImage }) {
   return (
     <section className="space-y-4 px-8">
-      <h2 className="text-2xl font-semibold text-lavender-dark">
+      <h2 className="text-3xl font-bold text-lavender-dark">
         Screens &amp; Demo
       </h2>
       <div className="grid gap-6 md:grid-cols-2">

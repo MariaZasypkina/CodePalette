@@ -23,7 +23,7 @@ export default function QuizPage() {
       <section className="section-padding">
         <div className="container-centered">
           {/* Hero Banner */}
-          <div className="bg-gradient-to-br from-lavender-light via-white to-sage-light p-8 rounded-2xl mb-12 text-center">
+          <div className="bg-sage-light p-8 rounded-2xl mb-12 text-center">
             <h1 className="text-3xl md:text-4xl font-bold text-lavender-dark mb-4">
               Not sure what kind of website you need?
             </h1>

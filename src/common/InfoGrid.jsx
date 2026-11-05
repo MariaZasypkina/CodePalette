@@ -8,7 +8,7 @@ export default function InfoGrid({ sections }) {
     <section className={`grid gap-8 px-8 ${gridClass}`}>
       {sections.map((section, idx) => (
         <Card key={idx}>
-          <h2 className="text-2xl font-semibold text-lavender-dark mb-3">
+          <h2 className="text-3xl font-bold text-lavender-dark mb-3">
             {section.title}
           </h2>
           {section.description && (

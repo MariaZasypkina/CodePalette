@@ -34,7 +34,7 @@
 }
 
 .hero-gradient {
-  @apply bg-gradient-to-br from-lavender-light via-white to-sage-light;
+  @apply bg-lavender-light;
 }
 
 .section-container {

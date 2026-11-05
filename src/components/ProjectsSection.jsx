@@ -51,7 +51,7 @@ export default function ProjectsSection() {
       <div className="max-w-5xl mx-auto">
         {/* Clickable Quiz Banner placed above projects title */}
         <Link to="/quiz" className="block mb-12">
-          <div className="bg-gradient-to-br from-lavender-light via-white to-sage-light p-6 rounded-2xl text-center hover:shadow-lg transition">
+          <div className="bg-lavender-light p-6 rounded-2xl text-center hover:shadow-lg transition">
             <h3 className="text-2xl md:text-3xl font-bold text-lavender-dark mb-2">
               Not sure what kind of website you need?
             </h3>
@@ -61,7 +61,7 @@ export default function ProjectsSection() {
           </div>
         </Link>
 
-        <h2 className="text-3xl font-semibold mb-8 text-lavender-dark">
+        <h2 className="text-3xl font-bold mb-8 text-lavender-dark">
           Favorite Projects of Our Studio
         </h2>
 
