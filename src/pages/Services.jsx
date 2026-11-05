@@ -94,7 +94,7 @@ export default function Services() {
     <PageLayout>
       {/* Header */}
       <section className="px-6 py-16 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-lavender-dark mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-sage-dark mb-4">
           Our Services
         </h1>
         <p className="text-lg text-sage-dark max-w-2xl mx-auto">
@@ -109,7 +109,7 @@ export default function Services() {
             {services.map((service) => (
               <Card key={service.id}>
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-semibold text-lavender-dark mb-3">
+                <h3 className="text-2xl font-semibold text-sage-dark mb-3">
                   {service.title}
                 </h3>
                 <p className="text-sage-dark mb-6">{service.description}</p>
@@ -130,7 +130,7 @@ export default function Services() {
 
       {/* CTA Section */}
       <section className="px-6 py-16 text-center">
-        <h2 className="text-3xl font-semibold text-lavender-dark mb-4">
+        <h2 className="text-3xl font-semibold text-sage-dark mb-4">
           Ready to bring your idea to life?
         </h2>
         <p className="text-lg text-sage-dark mb-8 max-w-2xl mx-auto">
@@ -138,7 +138,7 @@ export default function Services() {
         </p>
         <Link
           to="/contact"
-          className="inline-block px-8 py-4 bg-lavender-dark text-white rounded-lg font-semibold hover:bg-lavender transition"
+          className="inline-block px-8 py-4 bg-sage-dark text-white rounded-lg font-semibold hover:bg-sage transition"
         >
           Get a Quote
         </Link>

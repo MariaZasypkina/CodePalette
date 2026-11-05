@@ -86,7 +86,7 @@ export default function Quiz() {
           <p className="text-sm uppercase tracking-wide text-lavender mb-2">
             Your Perfect Match
           </p>
-          <h2 className="text-3xl font-bold text-lavender-dark mb-2">
+          <h2 className="text-3xl font-bold text-sage-dark mb-2">
             {resultData.title}
           </h2>
           <p className="text-lavender text-lg">{resultData.subtitle}</p>
@@ -97,7 +97,7 @@ export default function Quiz() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <h3 className="font-semibold text-lavender-dark mb-3">Includes</h3>
+              <h3 className="font-semibold text-sage-dark mb-3">Includes</h3>
               <ul className="space-y-2">
                 {resultData.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-sage-dark">
@@ -111,7 +111,7 @@ export default function Quiz() {
             <div className="space-y-6">
               <div className="bg-sage-light p-4 rounded-lg">
                 <p className="text-sm text-sage font-semibold mb-1">One-time cost</p>
-                <p className="text-2xl font-bold text-lavender-dark">
+                <p className="text-2xl font-bold text-sage-dark">
                   {resultData.oneTimeCost}
                 </p>
               </div>
@@ -133,7 +133,7 @@ export default function Quiz() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lavender-dark mb-3">Best for</h3>
+            <h3 className="font-semibold text-sage-dark mb-3">Best for</h3>
             <div className="flex flex-wrap gap-2">
               {resultData.bestFor.map((item, idx) => (
                 <span
@@ -175,7 +175,7 @@ export default function Quiz() {
       {/* Progress bar */}
       <div className="w-full bg-gray-200 rounded-full h-2">
         <div
-          className="bg-lavender-dark h-2 rounded-full transition-all duration-300"
+          className="bg-sage-dark h-2 rounded-full transition-all duration-300"
           style={{
             width: `${((currentQuestion + 1) / quizData.questions.length) * 100}%`,
           }}
@@ -186,7 +186,7 @@ export default function Quiz() {
         <p className="text-sm text-lavender font-semibold mb-2">
           Question {currentQuestion + 1} of {quizData.questions.length}
         </p>
-        <h2 className="text-2xl font-bold text-lavender-dark mb-2">{question.text}</h2>
+        <h2 className="text-2xl font-bold text-sage-dark mb-2">{question.text}</h2>
         <p className="text-gray-600">{question.subtitle}</p>
       </div>
 

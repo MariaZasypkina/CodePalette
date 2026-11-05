@@ -13,7 +13,7 @@ export default function PageLayout({ children, showBackLink = true }) {
           <div className="px-6 pt-4">
             <Link
               to="/"
-              className="inline-flex items-center gap-2 text-lavender-dark hover:text-lavender"
+              className="inline-flex items-center gap-2 text-sage-dark hover:text-lavender"
             >
               <span className="text-xl leading-none">←</span>
               <span>Home</span>

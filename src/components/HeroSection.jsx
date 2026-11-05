@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section className="hero-gradient w-full min-h-[70vh] flex flex-col items-center justify-center px-4 py-12">
       <div className="text-center max-w-2xl">
-        <h1 className="heading-xl text-lavender-dark">
+        <h1 className="heading-xl text-sage-dark">
           Creative Code Palette Studio
         </h1>
         <p className="text-center-max">

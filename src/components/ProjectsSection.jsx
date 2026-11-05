@@ -51,8 +51,8 @@ export default function ProjectsSection() {
       <div className="max-w-5xl mx-auto">
         {/* Clickable Quiz Banner placed above projects title */}
         <Link to="/quiz" className="block mb-12">
-          <div className="bg-lavender-light p-6 rounded-2xl text-center hover:shadow-lg transition">
-            <h3 className="text-2xl md:text-3xl font-bold text-lavender-dark mb-2">
+          <div className="bg-sage-light p-6 rounded-2xl text-center hover:shadow-lg transition">
+            <h3 className="text-2xl md:text-3xl font-bold text-sage-dark mb-2">
               Not sure what kind of website you need?
             </h3>
             <p className="text-sage-dark max-w-2xl mx-auto">
@@ -61,7 +61,7 @@ export default function ProjectsSection() {
           </div>
         </Link>
 
-        <h2 className="text-3xl font-bold mb-8 text-lavender-dark">
+        <h2 className="text-3xl font-bold mb-8 text-sage-dark">
           Favorite Projects of Our Studio
         </h2>
 
@@ -80,7 +80,7 @@ export default function ProjectsSection() {
                 </Link>
               )}
 
-              <h3 className="text-xl font-semibold mb-2 text-lavender-dark">
+              <h3 className="text-xl font-semibold mb-2 text-sage-dark">
                 {project.title}
               </h3>
 
@@ -90,7 +90,7 @@ export default function ProjectsSection() {
                 {project.github && (
                   <a
                     href={project.github}
-                    className="text-lavender-dark hover:text-lavender underline"
+                    className="text-sage-dark hover:text-lavender underline"
                   >
                     GitHub
                   </a>
@@ -98,7 +98,7 @@ export default function ProjectsSection() {
                 {project.details && (
                   <a
                     href={project.details}
-                    className="text-lavender-dark hover:text-lavender underline"
+                    className="text-sage-dark hover:text-lavender underline"
                   >
                     Details
                   </a>

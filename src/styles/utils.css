@@ -2,11 +2,11 @@
 /* postcss */
 
 .btn-primary {
-  @apply bg-lavender-dark text-white px-6 py-3 rounded-full shadow hover:scale-105 transition;
+  @apply bg-sage-dark text-white px-6 py-3 rounded-full shadow hover:scale-105 transition;
 }
 
 .btn-outline {
-  @apply border-2 border-lavender-dark text-lavender-dark px-6 py-3 rounded-full hover:bg-lavender-dark hover:text-white transition inline-flex justify-center text-center w-full sm:w-40;
+  @apply border-2 border-sage-dark text-sage-dark px-6 py-3 rounded-full hover:bg-sage-dark hover:text-white transition inline-flex justify-center text-center w-full sm:w-40;
 }
 
 .section-padding {
@@ -34,7 +34,7 @@
 }
 
 .hero-gradient {
-  @apply bg-lavender-light;
+  @apply bg-sage-light;
 }
 
 .section-container {
@@ -58,7 +58,7 @@
 }
 
 .logo-title {
-  @apply text-2xl md:text-3xl font-bold text-lavender-dark font-sans;
+  @apply text-2xl md:text-3xl font-bold text-sage-dark font-sans;
 }
 
 .logo-sub {
@@ -70,7 +70,7 @@
 }
 
 .nav-links a {
-  @apply hover:text-lavender-dark;
+  @apply hover:text-sage-dark;
 }
 /* Container */
 .infinite-waves {
