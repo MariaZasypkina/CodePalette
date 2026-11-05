@@ -41,7 +41,7 @@ export default function ProjectsSection() {
       description:
         "A science education platform with fact investigations, myth checks, reader questions, and a content dashboard.",
       github: "https://github.com/MariaZasypkina/Lexies-Scrubs.git",
-      details: "/fencing",
+      details: "/lexies-scrubs",
       image: lexiesScrubsImg,
     },
   ];
